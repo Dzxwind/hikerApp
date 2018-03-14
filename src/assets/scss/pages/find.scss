@@ -6,6 +6,9 @@
   }
   .recommend {
     margin-top: 10px;
+    @media screen and(max-width: 400px) {
+      display: none;
+    }
     .recommendTitle {
       color: $darkGreen;
       font-size: 20px;
@@ -15,23 +18,52 @@
       padding: 20px;
       border: 1px solid $darkGreen;
       border-radius: 7px;
-      display: flex;
-      flex-flow: row nowrap;
       @include clearfix;
       .recommendList_i {
-        margin: 0 10px;
-        flex: 1 auto;
+        float: left;
+        cursor: pointer;
+        @media screen and(max-width: 1920px) {
+          margin: 10px 44px;
+        }
+        @media screen and(max-width:1440px) {
+          margin: 10px 12px;
+        }
+        @media screen and(max-width:1366px) {
+          margin: 10px 7px;
+        }
+        @media screen and(max-width:1024px) {
+          margin: 10px 18px;
+        }
         .recommendListImg {
           img {
             width: 150px;
-            height: 150px;
           }
           .recommendListName {
             text-align: center;
-            margin-top: 10px;
+            display: block;
+            margin: 0 auto;
           }
         }
       }
     }
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 1s;
+  }
+  .fade-enter,
+  .fade-leave-to
+  {
+    opacity: 0;
+  }
+
+  .fade2-enter-active,
+  .fade2-leave-active {
+    transition: opacity .5s .5s;
+  }
+  .fade2-enter,
+  .fade2-leave-to
+  {
+    opacity: 0;
   }
 }

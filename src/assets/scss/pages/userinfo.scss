@@ -1,0 +1,30 @@
+.userinfo {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, .8);
+  transition: all 1s;
+  width: 80%;
+  height: 80%;
+  z-index: 100;
+  .userinfoWrapper {
+    .userImg {
+      img {
+        height: 40%;
+        display: block;
+        margin: 5% auto 2% auto;
+      }
+    }
+    .userDetail{
+      text-align: center;
+      font-size: 18px;
+      p{
+        margin: 1% 0;
+        color: #fff;
+      }
+    }
+  }
+}

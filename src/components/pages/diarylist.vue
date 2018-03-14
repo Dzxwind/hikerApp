@@ -5,7 +5,7 @@
         <a @click="moreClick()">更多>>></a>
       </div>
       <div class="diarylist">
-        <div class="diarylist_i" v-for="diary in diarys"  v-bind:key="diary.diaryId">
+        <div class="diarylist_i" v-for="(diary,index) in diarys"  v-bind:key="diary.diaryId" v-if="index < 3">
           <div class="diary_iTitle" v-text="diary.title"></div>
           <div class="diary_iContent col-xs-12 col-lg-9" v-text="diary.content"></div>
           <div class="diary_iImg col-xs-12 col-lg-3"><img :src="diary.imgSrc"></div>

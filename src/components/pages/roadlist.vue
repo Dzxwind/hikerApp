@@ -5,7 +5,7 @@
         <div class="road__title">路线</div>
         <div class="road__nav">
           <ul>
-            <li v-for="tab in tabs" v-bind:key="tab.name" v-text="tab.name" :class="{active:isActive}"></li>
+            <li v-for="(tab,index) in tabs" v-bind:key="tab.name" v-text="tab.name" :class="{active:isActive}" v-if="index < 8"></li>
             <li class="more" @click="toMore()">更多>>></li>
           </ul>
         </div>

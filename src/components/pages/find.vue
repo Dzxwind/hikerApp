@@ -5,15 +5,21 @@
       <div class="recommend">
         <div class="recommendTitle">为您推荐</div>
         <div class="recommendList">
-          <div class="recommendList_i" v-for="item in recList" :key="item.id">
+          <div class="recommendList_i" v-for="(item,index) in recList" v-if="index < 5" :key="item.id" @click="showDetail(item)" >
             <div class="recommendListImg">
               <img :src="item.imgsrc" alt="">
-              <div class="recommendListName" v-text="item.name"></div>
+              <span class="recommendListName" v-text="item.name"></span>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <transition name="fade2">
+      <userinfo :userMessage="userMessage" v-if="isShow"></userinfo>
+    </transition>
+    <transition name="fade">
+      <myMask v-if="isShow"></myMask>    
+    </transition>
   </div>
 </template>
 <style lang="scss">
@@ -21,6 +27,8 @@
 @import "../../assets/scss/pages/find.scss";
 </style>
 <script>
+import userinfo from './userinfo'
+import myMask from './../mask'
 export default {
   name: "find",
   data() {
@@ -29,35 +37,75 @@ export default {
         {
           id: "00001",
           name: "测试用户1",
+          age:"25",
+          sex:"女",
+          gone:["北京","洛阳"],
+          sign:"没有人是在快乐中成熟的。痛苦的收获是成长，成长的代价是痛苦。",
           imgsrc: require("../../assets/headImg1.jpg")
         },
         {
           id: "00002",
           name: "测试用户2",
+          age:"22",
+          sex:"女",
+          gone:["南京","承德"],
+          sign:"我很丑可是我有音乐和啤酒。",
           imgsrc: require("../../assets/headImg2.jpg")
         },
         {
           id: "00003",
           name: "测试用户3",
+          age:"26",
+          sex:"男",
+          gone:["黄山","丽江","香格里拉"],
+          sign:"每一个暴肥的现在，都有一个微胖的曾经，我不禁感慨，原来我瘦过。",
           imgsrc: require("../../assets/headImg3.jpg")
         },
         {
           id: "00004",
           name: "测试用户4",
-          imgsrc: require("../../assets/headImg1.jpg")
+          age:"28",
+          sex:"女",
+          gone:["呼伦贝尔","厦门"],
+          sign:"就算全世界的人说你不好，我也愿与全世界为敌",
+          imgsrc: require("../../assets/headImg4.jpg")
         },
         {
           id: "00005",
           name: "测试用户5",
-          imgsrc: require("../../assets/headImg2.jpg")
+          age:"24",
+          sex:"女",
+          gone:["南宁","杭州"],
+          sign:"每个人的心中都会装着自己不愿说出来的心酸和无奈",
+          imgsrc: require("../../assets/headImg1.jpg")
         },
         {
           id: "00006",
           name: "测试用户6",
-          imgsrc: require("../../assets/headImg3.jpg")
+          age:"23",
+          sex:"男",
+          gone:["开封","泰山"],
+          sign:"君为伊醉笑痴狂，伊为君撕心断肠。",
+          imgsrc: require("../../assets/headImg2.jpg")
         },
-      ]
+      ],
+      isShow:false,
+      userMessage:{}
     };
+  },
+  components:{
+    userinfo,
+    myMask
+  },
+  methods:{
+    showDetail(item){
+      this.userMessage = item;
+      this.isShow = true;
+    },
+    hideDetail(){
+      this.userMessage = {};
+      this.isShow = false;
+    }
   }
 };
 </script>
