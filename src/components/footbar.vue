@@ -2,7 +2,7 @@
   <div class="col-xs-12">
     <div class="footbar row">
       <div class="footbar__text">
-        Copyright© 2017 dzxwind.club  浙ICP备 XXXXXXXXXXX-1号
+        Copyright© 2017 dzxwind.club HikerAPP
       </div>
     </div>
   </div>

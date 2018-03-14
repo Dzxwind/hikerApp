@@ -1,4 +1,4 @@
-.diarylist {
+.diarylistOut {
   padding: 60px 0; // height: 600px;
   width: 100%;
   @include clearfix;
@@ -6,6 +6,18 @@
     font-size: 36px;
     opacity: 1;
     color: $darkGreen;
+    a{
+      font-size: 14px;
+      text-align: right;
+      float: right;
+      color: $gray;
+      text-decoration: none;
+      margin-top: 30px;
+      cursor: pointer;
+      &:hover{
+        color: $darkGreen;
+      }
+    }
   }
   .diarylist {
     .diarylist_i {
@@ -43,6 +55,7 @@
         .diary_iImg {
           float: right;
           // margin-left: 2%;
+          padding-right: 0;
         }
       }
       &:nth-child(odd) {
@@ -52,6 +65,7 @@
         }
         .diary_iImg {
           float: left;
+          padding-left: 0;
         }
       }
     }

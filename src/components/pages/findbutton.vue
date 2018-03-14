@@ -7,7 +7,7 @@
       <div class="findbutton__title">一场好的旅行从选择一个合适的驴友开始</div>
       <div class="findbutton__subtitle">我们将根据您给出的过滤条件为您匹配合适的驴友，<br>
   与您组成游玩搭档来享受这场快乐的旅行</div>
-      <div class="findbutton__button">
+      <div class="findbutton__button" @click="toMore()">
         <img src="../../assets/search.png">开始筛选
       </div>
     </div>
@@ -20,5 +20,10 @@
 <script>
 export default {
   name:'findbutton',
+  methods:{
+    toMore(){
+      this.$router.push({path:'/find'})
+    }
+  }
 }
 </script>

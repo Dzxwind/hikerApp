@@ -1,0 +1,37 @@
+.find {
+  padding-top: 60px;
+  .findTitle {
+    font-size: 36px;
+    color: $darkGreen;
+  }
+  .recommend {
+    margin-top: 10px;
+    .recommendTitle {
+      color: $darkGreen;
+      font-size: 20px;
+    }
+    .recommendList {
+      margin-top: 10px;
+      padding: 20px;
+      border: 1px solid $darkGreen;
+      border-radius: 7px;
+      display: flex;
+      flex-flow: row nowrap;
+      @include clearfix;
+      .recommendList_i {
+        margin: 0 10px;
+        flex: 1 auto;
+        .recommendListImg {
+          img {
+            width: 150px;
+            height: 150px;
+          }
+          .recommendListName {
+            text-align: center;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

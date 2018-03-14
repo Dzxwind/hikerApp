@@ -6,7 +6,7 @@
         <div class="road__nav">
           <ul>
             <li v-for="tab in tabs" v-bind:key="tab.name" v-text="tab.name" :class="{active:isActive}"></li>
-            <li class="more">更多>>></li>
+            <li class="more" @click="toMore()">更多>>></li>
           </ul>
         </div>
       </div>
@@ -90,6 +90,11 @@ export default {
           liked:false
         },
       ]
+    }
+  },
+  methods:{
+    toMore(){
+      this.$router.push({path:'/way'});
     }
   }
 }
