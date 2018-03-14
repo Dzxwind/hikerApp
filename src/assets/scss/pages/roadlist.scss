@@ -1,0 +1,65 @@
+.roadlist {
+  padding: 60px 0; // height: 600px;
+  width: 100%;
+  background: url('#{$images}/screen2.png') no-repeat center center;
+  color: #fff;
+  @include clearfix;
+  .road__title {
+    font-size: 36px;
+    opacity: 1;
+  }
+  .road__nav {
+    margin-bottom: 20px;
+    ul {
+      list-style: none;
+      margin-top: 20px;
+      @include clearfix;
+      li {
+        float: left;
+        padding: 10px 0 5px 0;
+        margin-right: 20px;
+        cursor: pointer;
+        opacity: .7;
+        border-bottom: 2px solid transparent;
+        &:hover {
+          opacity: 1;
+        }
+        &.active {
+          opacity: 1;
+          border-bottom: 2px solid rgba(255, 255, 255, 1);
+        }
+      }
+      .more{
+        float: right;
+      }
+    }
+  }
+}
+
+.road__list {
+  // margin: 0 auto;
+  @include clearfix;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.road__list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.road__list_i {
+  flex: 1 0 22%;
+  margin: 10px;
+  // min-height: 190px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  @media screen and(max-width: 500px) {
+    min-height: 100px;
+    flex: 1 0 40%;
+  }
+  img{
+    width: 100%;
+  }
+}

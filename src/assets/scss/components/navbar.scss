@@ -1,0 +1,95 @@
+  .navList {
+    width: 90%;
+    height: 60px;
+    background-color: #fff;
+    position: absolute;
+    // position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 30px;
+    line-height: 60px;
+    padding: 0 40px;
+    z-index: 999;
+    transition: height .5s;
+    &.navList_animate {
+      height: 100px;
+    }
+    .logo {
+      float: left;
+      font-size: 32px;
+      font-weight: bold;
+      color: $darkGreen;
+      margin-right: 20px;
+    }
+    .pcLink {
+      @media screen and(max-width: 1920px) {
+        display: block;
+      }
+      @media screen and(max-width:800px) {
+        display: none;
+      }
+      a {
+        float: left;
+        display: block;
+        padding: 8px 30px;
+        text-decoration: none;
+        border-right: solid 1px $white;
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 14px;
+        color: $fontBlack;
+        &:hover{
+          color: $gray;
+        }
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+    .mobileLink {
+      @include clearfix;
+      .mobile__button {
+        cursor: pointer;
+        float: right;
+        img {
+          width: 40px;
+          height: 40px;
+          vertical-align: middle;
+        }
+      }
+      .mobile__navList {
+        float: left;
+        width: 100%;
+        line-height: 20px;
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity .5s;
+        a {
+          color: $gray;
+          text-decoration: none;
+          margin-right: 8%;
+          &:hover {
+            color: $fontBlack;
+          }
+        }
+        &.mobile__navList_animate {
+          opacity: 1;
+        }
+      }
+      @media screen and(max-width: 1920px) {
+        display: none;
+      }
+      @media screen and(max-width:800px) {
+        display: block;
+      }
+    }
+  }
+
+  .navList_fixed {
+    position: fixed;
+    top: 10px;
+    background-color: rgba(235, 235, 235, 0.7);
+    transition: background 2s;
+  }

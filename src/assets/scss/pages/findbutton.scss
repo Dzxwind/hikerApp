@@ -1,0 +1,48 @@
+ .findbutton {
+   width: 100%;
+   background-color: #fefefe;
+   padding: 60px 0;
+   text-align: center;
+   @include clearfix;
+ }
+
+ .findbutton__img img {
+   margin: 0 auto;
+   display: block;
+ }
+
+ .findbutton__title {
+   color: #354549;
+   font-size: 20px;
+   letter-spacing: 4px;
+   margin-top: 20px;
+ }
+
+ .findbutton__subtitle {
+   color: #94a0a3;
+   font-size: 14px;
+   line-height: 20px;
+   letter-spacing: 1px;
+   margin-top: 10px;
+ }
+
+ .findbutton__button {
+   width: 150px;
+   height: 50px;
+   border-radius: 999px;
+   background-color: #3eacb9;
+   margin: 50px auto 0 auto;
+   color: #fff;
+   line-height: 50px;
+   cursor: pointer;
+ }
+
+ .findbutton__button img {
+   width: 14px;
+   display: inline-block;
+   margin-right: 10px;
+ }
+
+ .findbutton__button:hover {
+   background-color: #6ec8d3;
+ }

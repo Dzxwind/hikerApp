@@ -1,0 +1,59 @@
+.diarylist {
+  padding: 60px 0; // height: 600px;
+  width: 100%;
+  @include clearfix;
+  .diary__title {
+    font-size: 36px;
+    opacity: 1;
+    color: $darkGreen;
+  }
+  .diarylist {
+    .diarylist_i {
+      padding-top: 30px;
+      .diary_iTitle {
+        font-size: 20px;
+        color: $fontBlack;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .diary_iContent {
+        text-indent: 2em;
+        line-height: 28px;
+        margin-bottom: 30px;
+        // width: 80%;
+      }
+      .diary_iImg {
+        // width: 18%;
+        margin-bottom: 30px;
+        img {
+          width: 100%;
+        }
+      }
+      .diary_iHr {
+        clear: both;
+        height: 1px;
+        background-color: #abdfe5;
+        width: 80%;
+        margin: 0 auto;
+      }
+      &:nth-child(even) {
+        .diary_iContent {
+          float: left;
+        }
+        .diary_iImg {
+          float: right;
+          // margin-left: 2%;
+        }
+      }
+      &:nth-child(odd) {
+        .diary_iContent {
+          float: right;
+          // margin-left: 2%;
+        }
+        .diary_iImg {
+          float: left;
+        }
+      }
+    }
+  }
+}

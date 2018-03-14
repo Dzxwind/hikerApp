@@ -1,0 +1,24 @@
+$darkGreen:#0d3a3f;
+$fontBlack:#354549;
+$orange:#dc7064;
+$lightOrange:#e48176;
+$white:#e7eced;
+$gray:#999;
+$images:"../../assets";
+$imagesC:"../assets";
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+}
