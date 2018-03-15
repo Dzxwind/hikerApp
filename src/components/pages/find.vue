@@ -13,6 +13,43 @@
           </div>
         </div>
       </div>
+      <div class="selectForm">
+        <div class="selectTitle">寻找驴友</div>
+        <div class="selectList">
+          <label for="sexSelect">性别：</label>
+          <select v-model="sexSelect" id="sexSelect">
+            <option disabled value="">请选择</option>
+            <option value="male">男</option>
+            <option value="female">女</option>
+            <option value="all">不限</option>
+          </select>
+          <label for="ageSelect">年龄：</label>
+          <select v-model="ageSelect" id="ageSelect">
+            <option disabled value="">请选择</option>
+            <option value="20">20岁以下</option>
+            <option value="30">21~30岁</option>
+            <option value="40">31~40岁</option>
+            <option>41岁以上</option>
+          </select>
+          <label for="goneSelect">曾经去过：</label>
+          <select v-model="goneSelect" id="goneSelect">
+            <option disabled value="">请选择</option>
+            <option value="0">0处</option>
+            <option value="1">1处</option>
+            <option value="2">2处</option>
+            <option value="3">3处及以上</option>
+          </select>
+        </div>
+        <div class="selectSubmit" @click="selectUser()"><img src="../../assets/search.png">搜索</div>
+      </div>
+      <div class="selectListin">
+        <div class="selectList_i" v-for="(item,index) in recList" v-if="index < 5" :key="item.id" @click="showDetail(item)" >
+            <div class="selectListImg">
+              <img :src="item.imgsrc" alt="">
+              <span class="selectListName" v-text="item.name"></span>
+            </div>
+          </div>
+      </div>
     </div>
     <transition name="fade2">
       <userinfo :userMessage="userMessage" v-if="isShow" @detailHide="hideDetail()"></userinfo>
@@ -78,7 +115,7 @@ export default {
           sex: "女",
           gone: ["南宁", "杭州"],
           sign: "每个人的心中都会装着自己不愿说出来的心酸和无奈",
-          imgsrc: require("../../assets/headImg1.jpg")
+          imgsrc: require("../../assets/headImg5.jpg")
         },
         {
           id: "00006",
@@ -87,11 +124,32 @@ export default {
           sex: "男",
           gone: ["开封", "泰山"],
           sign: "君为伊醉笑痴狂，伊为君撕心断肠。",
+          imgsrc: require("../../assets/headImg1.jpg")
+        },
+        {
+          id: "00007",
+          name: "测试用户7",
+          age: "31",
+          sex: "男",
+          gone: ["开封", "泰山"],
+          sign: "君为伊醉笑痴狂，伊为君撕心断肠。",
+          imgsrc: require("../../assets/headImg2.jpg")
+        },
+        {
+          id: "00008",
+          name: "测试用户8",
+          age: "45",
+          sex: "男",
+          gone: ["开封", "泰山", "庐山"],
+          sign: "君为伊醉笑痴狂，伊为君撕心断肠。",
           imgsrc: require("../../assets/headImg2.jpg")
         }
       ],
       isShow: false,
-      userMessage: {}
+      userMessage: {},
+      sexSelect: "",
+      ageSelect: "",
+      goneSelect: ""
     };
   },
   components: {
@@ -106,7 +164,12 @@ export default {
     hideDetail() {
       this.userMessage = {};
       this.isShow = false;
+    },
+    selectUser() {
+      console.log(this.sexSelect);
+      console.log(this.ageSelect);
+      console.log(this.goneSelect);
     }
-  },
+  }
 };
 </script>

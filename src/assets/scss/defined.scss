@@ -4,6 +4,8 @@ $orange:#dc7064;
 $lightOrange:#e48176;
 $white:#e7eced;
 $gray:#999;
+$greenBlue:#3eacb9;
+$lightGreen:#6ec8d3;
 $images:"../../assets";
 $imagesC:"../assets";
 @mixin clearfix {
@@ -15,10 +17,12 @@ $imagesC:"../assets";
     visibility: hidden;
   }
 }
-ul{
+
+ul {
   margin: 0;
   padding: 0;
 }
-p{
+
+p {
   margin: 0;
 }

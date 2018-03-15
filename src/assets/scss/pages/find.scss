@@ -6,9 +6,6 @@
   }
   .recommend {
     margin-top: 10px;
-    @media screen and(max-width: 400px) {
-      display: none;
-    }
     .recommendTitle {
       color: $darkGreen;
       font-size: 20px;
@@ -16,7 +13,7 @@
     .recommendList {
       margin-top: 10px;
       padding: 20px;
-      border: 1px solid $darkGreen;
+      border: 1px solid $lightGreen;
       border-radius: 7px;
       @include clearfix;
       .recommendList_i {
@@ -34,6 +31,15 @@
         @media screen and(max-width:1024px) {
           margin: 10px 18px;
         }
+        @media screen and(max-width: 400px) {
+          float: none;
+          .recommendListImg {
+            img {
+              display: block;
+              margin: 0 auto;
+            }
+          }
+        }
         .recommendListImg {
           img {
             width: 150px;
@@ -42,7 +48,100 @@
             text-align: center;
             display: block;
             margin: 0 auto;
+            margin-top: 10px;
+            color: $darkGreen;
           }
+        }
+      }
+    }
+  }
+  .selectForm {
+    margin-top: 20px;
+    @include clearfix;
+    .selectTitle {
+      color: $darkGreen;
+      font-size: 20px;
+    }
+    .selectList {
+      margin: 20px 0;
+      margin-top: 30px;
+      border-radius: 7px;
+      float: left;
+      label {
+        font-size: 18px;
+        color: $fontBlack;
+      }
+      select {
+        border-radius: 999px;
+        font-size: 14px;
+        padding: 2px 10px;
+        margin-right: 10px;
+        outline: none;
+        cursor: pointer;
+        &:focus {
+          border: 1px solid $greenBlue;
+        }
+      }
+    }
+    .selectSubmit {
+      background-color: $greenBlue;
+      float: left;
+      margin: 20px 0;
+      padding: 5px 30px;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 18px;
+      line-height: 30px;
+      margin-left: 20px;
+      cursor: pointer;
+      img {
+        width: 20px;
+        margin-right: 10px;
+      }
+      &:hover {
+        background-color: $lightGreen;
+      }
+    }
+  }
+  .selectListin {
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 7px;
+    @include clearfix;
+    .selectList_i {
+      float: left;
+      cursor: pointer;
+      @media screen and(max-width: 1920px) {
+        margin: 10px 44px;
+      }
+      @media screen and(max-width:1440px) {
+        margin: 10px 12px;
+      }
+      @media screen and(max-width:1366px) {
+        margin: 10px 7px;
+      }
+      @media screen and(max-width:1024px) {
+        margin: 10px 18px;
+      }
+      @media screen and(max-width: 400px) {
+        float: none;
+        .selectListImg {
+          img {
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+      .selectListImg {
+        img {
+          width: 150px;
+        }
+        .selectListName {
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+          margin-top: 10px;
+          color: $darkGreen;
         }
       }
     }
@@ -52,18 +151,15 @@
     transition: opacity 1s;
   }
   .fade-enter,
-  .fade-leave-to
-  {
+  .fade-leave-to {
     opacity: 0;
   }
-
   .fade2-enter-active,
   .fade2-leave-active {
     transition: opacity .5s .5s;
   }
   .fade2-enter,
-  .fade2-leave-to
-  {
+  .fade2-leave-to {
     opacity: 0;
   }
 }

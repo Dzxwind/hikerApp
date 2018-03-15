@@ -10,7 +10,7 @@
 <script>
 export default {
   mounted(){
-    console.log("mask")
+    console.log("mask in")
   }
 }
 </script>
