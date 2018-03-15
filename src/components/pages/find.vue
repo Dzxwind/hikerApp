@@ -19,17 +19,16 @@
           <label for="sexSelect">性别：</label>
           <select v-model="sexSelect" id="sexSelect">
             <option disabled value="">请选择</option>
-            <option value="male">男</option>
-            <option value="female">女</option>
-            <option value="all">不限</option>
+            <option>男</option>
+            <option>女</option>
           </select>
           <label for="ageSelect">年龄：</label>
           <select v-model="ageSelect" id="ageSelect">
             <option disabled value="">请选择</option>
-            <option value="20">20岁以下</option>
-            <option value="30">21~30岁</option>
-            <option value="40">31~40岁</option>
-            <option>41岁以上</option>
+            <option value="0">20岁以下</option>
+            <option value="1">21~30岁</option>
+            <option value="2">31~40岁</option>
+            <option value="3">41岁以上</option>
           </select>
           <label for="goneSelect">曾经去过：</label>
           <select v-model="goneSelect" id="goneSelect">
@@ -42,14 +41,16 @@
         </div>
         <div class="selectSubmit" @click="selectUser()"><img src="../../assets/search.png">搜索</div>
       </div>
-      <div class="selectListin">
-        <div class="selectList_i" v-for="(item,index) in recList" v-if="index < 5" :key="item.id" @click="showDetail(item)" >
-            <div class="selectListImg">
-              <img :src="item.imgsrc" alt="">
-              <span class="selectListName" v-text="item.name"></span>
+      <transition name="fade">
+        <div class="selectListin">
+          <div class="selectList_i" v-for="item in filterList" v-if="showFilter" :key="item.id" @click="showDetail(item)" >
+              <div class="selectListImg">
+                <img :src="item.imgsrc" alt="">
+                <span class="selectListName" v-text="item.name"></span>
+              </div>
             </div>
-          </div>
-      </div>
+        </div>
+      </transition>
     </div>
     <transition name="fade2">
       <userinfo :userMessage="userMessage" v-if="isShow" @detailHide="hideDetail()"></userinfo>
@@ -75,6 +76,7 @@ export default {
           id: "00001",
           name: "测试用户1",
           age: "25",
+          ageSelector: "1",
           sex: "女",
           gone: ["北京", "洛阳"],
           sign: "没有人是在快乐中成熟的。痛苦的收获是成长，成长的代价是痛苦。",
@@ -84,6 +86,7 @@ export default {
           id: "00002",
           name: "测试用户2",
           age: "22",
+          ageSelector: "1",
           sex: "女",
           gone: ["南京", "承德"],
           sign: "我很丑可是我有音乐和啤酒。",
@@ -93,6 +96,7 @@ export default {
           id: "00003",
           name: "测试用户3",
           age: "26",
+          ageSelector: "1",
           sex: "男",
           gone: ["黄山", "丽江", "香格里拉"],
           sign:
@@ -103,6 +107,7 @@ export default {
           id: "00004",
           name: "测试用户4",
           age: "28",
+          ageSelector: "1",
           sex: "女",
           gone: ["呼伦贝尔", "厦门"],
           sign: "就算全世界的人说你不好，我也愿与全世界为敌",
@@ -112,6 +117,7 @@ export default {
           id: "00005",
           name: "测试用户5",
           age: "24",
+          ageSelector: "1",
           sex: "女",
           gone: ["南宁", "杭州"],
           sign: "每个人的心中都会装着自己不愿说出来的心酸和无奈",
@@ -121,6 +127,7 @@ export default {
           id: "00006",
           name: "测试用户6",
           age: "23",
+          ageSelector: "1",
           sex: "男",
           gone: ["开封", "泰山"],
           sign: "君为伊醉笑痴狂，伊为君撕心断肠。",
@@ -130,6 +137,7 @@ export default {
           id: "00007",
           name: "测试用户7",
           age: "31",
+          ageSelector: "2",
           sex: "男",
           gone: ["开封", "泰山"],
           sign: "君为伊醉笑痴狂，伊为君撕心断肠。",
@@ -139,6 +147,17 @@ export default {
           id: "00008",
           name: "测试用户8",
           age: "45",
+          ageSelector: "3",
+          sex: "男",
+          gone: ["开封", "泰山", "庐山"],
+          sign: "君为伊醉笑痴狂，伊为君撕心断肠。",
+          imgsrc: require("../../assets/headImg2.jpg")
+        },
+        {
+          id: "00009",
+          name: "测试用户8",
+          age: "19",
+          ageSelector: "0",
           sex: "男",
           gone: ["开封", "泰山", "庐山"],
           sign: "君为伊醉笑痴狂，伊为君撕心断肠。",
@@ -149,7 +168,8 @@ export default {
       userMessage: {},
       sexSelect: "",
       ageSelect: "",
-      goneSelect: ""
+      goneSelect: "",
+      showFilter: false
     };
   },
   components: {
@@ -169,6 +189,21 @@ export default {
       console.log(this.sexSelect);
       console.log(this.ageSelect);
       console.log(this.goneSelect);
+      this.showFilter = true;
+    }
+  },
+  computed: {
+    filterList() {
+      var sexSelect = this.sexSelect;
+      var ageSelect = this.ageSelect;
+      var goneSelect = this.goneSelect;
+      return this.recList.filter(filterItem => {
+        return (
+          filterItem.sex == sexSelect &&
+          filterItem.ageSelector == ageSelect &&
+          filterItem.gone.length == goneSelect
+        );
+      });
     }
   }
 };
