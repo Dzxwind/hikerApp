@@ -10,6 +10,7 @@
         <p>曾经去过:{{haveGone}}</p>
         <p>个性签名:{{userMessage.sign}}</p>
       </div>
+      <div class="closeButton" @click="closeDetail()">×</div>
     </div>
   </div>
 </template>
@@ -35,6 +36,11 @@ export default {
       return fix;
     }
   },
+  methods:{
+    closeDetail(){
+      this.$emit('detailHide');
+    }
+  }
 }
 </script>
 

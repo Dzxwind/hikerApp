@@ -15,16 +15,24 @@
       img {
         height: 40%;
         display: block;
-        margin: 5% auto 2% auto;
+        margin: 60px auto 20px auto;
       }
     }
-    .userDetail{
+    .userDetail {
       text-align: center;
       font-size: 18px;
-      p{
+      p {
         margin: 1% 0;
         color: #fff;
       }
+    }
+    .closeButton{
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
     }
   }
 }
