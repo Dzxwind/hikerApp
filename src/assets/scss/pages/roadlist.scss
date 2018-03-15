@@ -9,27 +9,20 @@
     opacity: 1;
   }
   .road__nav {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     ul {
       list-style: none;
-      margin-top: 20px;
+      margin-top: 10px;
       @include clearfix;
       li {
         float: left;
         padding: 10px 0 5px 0;
         margin-right: 20px;
-        cursor: pointer;
         opacity: .7;
         border-bottom: 2px solid transparent;
-        &:hover {
-          opacity: 1;
-        }
-        &.active {
-          opacity: 1;
-          border-bottom: 2px solid rgba(255, 255, 255, 1);
-        }
       }
       .more{
+        cursor: pointer;
         float: right;
       }
     }

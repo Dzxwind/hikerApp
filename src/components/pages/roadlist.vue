@@ -5,7 +5,7 @@
         <div class="road__title">路线</div>
         <div class="road__nav">
           <ul>
-            <li v-for="(tab,index) in tabs" v-bind:key="tab.name" v-text="tab.name" :class="{active:isActive}" v-if="index < 8"></li>
+            <li>一花，一草，皆是好去处</li>
             <li class="more" @click="toMore()">更多>>></li>
           </ul>
         </div>
@@ -27,26 +27,6 @@ export default {
   name:'roadlist',
   data() {
     return{
-      tabs:[
-        {
-          name:"接近自然"
-        },
-        {
-          name:"人文之行"
-        },
-        {
-          name:"放松休闲"
-        },
-        {
-          name:"红色旅行"
-        },
-        {
-          name:"徒步健身"
-        },
-        {
-          name:"梦幻之旅"
-        },
-      ],
       isActive:false,
       roadList:[
         {
@@ -95,7 +75,7 @@ export default {
   methods:{
     toMore(){
       this.$router.push({path:'/way'});
-    }
+    }    
   }
 }
 </script>

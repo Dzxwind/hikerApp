@@ -186,9 +186,6 @@ export default {
       this.isShow = false;
     },
     selectUser() {
-      console.log(this.sexSelect);
-      console.log(this.ageSelect);
-      console.log(this.goneSelect);
       this.showFilter = true;
     }
   },
