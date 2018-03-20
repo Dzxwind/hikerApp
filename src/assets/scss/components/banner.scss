@@ -79,25 +79,44 @@
 
  .el-carousel__item:nth-child(3) {
    background: url('#{$imagesC}/banner.jpeg') no-repeat center 60%;
-   background-size: 100%;
+   background-size: 100% auto;
+   @media screen and(max-width: 800px) {
+     background-size: auto 100%;
+   }
  }
 
  .el-carousel__item:nth-child(4) {
    background: url('#{$imagesC}/banner2.jpg') no-repeat center 60%;
-   background-size: 100%;
+   background-size: 100% auto;
+   @media screen and(max-width: 800px) {
+     background-size: auto 100%;
+   }
  }
 
  .el-carousel__item:nth-child(5) {
    background: url('#{$imagesC}/banner3.jpg') no-repeat center 40%;
-   background-size: 100%;
+   background-size: 100% auto;
+   @media screen and(max-width: 800px) {
+     background-size: auto 100%;
+   }
  }
 
  .el-carousel__item:nth-child(6) {
    background: url('#{$imagesC}/banner4.jpg') no-repeat center 40%;
-   background-size: 100%;
+   background-size: 100% auto;
+   @media screen and(max-width: 800px) {
+     background-size: auto 100%;
+   }
  }
 
  .el-carousel__item:nth-child(7) {
    background: url('#{$imagesC}/banner5.jpg') no-repeat center 85%;
-   background-size: 100%;
+   background-size: 100% auto;
+   @media screen and(max-width: 800px) {
+     background-size: auto 100%;
+   }
+ }
+
+ .el-carousel__indicators{
+   width: 190px;
  }

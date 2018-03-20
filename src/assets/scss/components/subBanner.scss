@@ -1,0 +1,21 @@
+.subBanner {
+  background: no-repeat center center;
+  height: 400px;
+  margin-bottom: 60px;
+}
+
+.findBanner {
+  background-image: url("#{$imagesC}/findBanner.jpg");
+}
+
+.wayBanner {
+  background-image: url("#{$imagesC}/wayBanner.jpg");
+}
+
+.articleBanner {
+  background-image: url("#{$imagesC}/articleBanner.jpg");
+}
+
+.contactBanner {
+  background-image: url("#{$imagesC}/contactBanner.jpg");
+}

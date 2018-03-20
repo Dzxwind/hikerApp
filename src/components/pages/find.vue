@@ -1,5 +1,6 @@
 <template>
   <div class="find">
+    <subBanner :useWhichBanner="whichBanner"></subBanner>
     <div class="col-lg-8 col-lg-offset-2 col-xs-12">
       <div class="findTitle">发现</div>
       <div class="recommend">
@@ -67,6 +68,7 @@
 <script>
 import userinfo from "./userinfo";
 import myMask from "./../mask";
+import subBanner from "./../subBanner";
 export default {
   name: "find",
   data() {
@@ -169,12 +171,14 @@ export default {
       sexSelect: "",
       ageSelect: "",
       goneSelect: "",
-      showFilter: false
+      showFilter: false,
+      whichBanner:"findBanner",
     };
   },
   components: {
     userinfo,
-    myMask
+    myMask,
+    subBanner
   },
   methods: {
     showDetail(item) {
