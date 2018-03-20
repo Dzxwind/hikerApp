@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <navbar></navbar>
-    <banner></banner>    
     <router-view/>
     <footbar></footbar>
   </div>
@@ -9,12 +8,11 @@
 
 <script>
 import navbar from './components/navbar'
-import banner from './components/banner'
 import footbar from './components/footbar'
 export default {
   name: 'app',
   components:{
-    navbar,footbar,banner
+    navbar,footbar
   }
 }
 
