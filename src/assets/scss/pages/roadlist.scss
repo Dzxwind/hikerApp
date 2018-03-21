@@ -21,7 +21,7 @@
         opacity: .7;
         border-bottom: 2px solid transparent;
       }
-      .more{
+      .more {
         cursor: pointer;
         float: right;
       }
@@ -44,15 +44,47 @@
 
 .road__list_i {
   flex: 1 0 22%;
-  margin: 10px;
-  // min-height: 190px;
+  margin: 10px; // min-height: 190px;
   border: 1px solid #fff;
   overflow: hidden;
   @media screen and(max-width: 500px) {
     min-height: 100px;
     flex: 1 0 40%;
   }
-  img{
+  img {
     width: 100%;
+  }
+}
+
+.road__newlist {
+  @include clearfix;
+  .bottom {
+    margin-top: 13px;
+    line-height: 12px;
+  }
+  .button {
+    float: right;
+    padding: 5px 10px;
+    background-color: $greenBlue;
+    border-color: $lightGreen;
+    &:hover {
+      background-color: $lightGreen;
+      border-color: $lightGreen;
+    }
+  }
+  .image {
+    width: 100%;
+    display: block;
+  }
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: "";
+  }
+  .clearfix:after {
+    clear: both
+  }
+  .road__newlist_i {
+    margin-bottom: 10px;
   }
 }

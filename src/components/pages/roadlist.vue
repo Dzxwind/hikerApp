@@ -10,10 +10,23 @@
           </ul>
         </div>
       </div>
-      <div class="road__list">
+      <!-- <div class="road__list">
         <div class="road__list_i" v-for="roadItem in roadList" v-bind:key="roadItem.name">
           <img :src="roadItem.src">
           </div>
+      </div> -->
+      <div class="road__newlist">
+        <div v-for="item in roadList" :key="item.name" class="col-lg-3 col-xs-6 road__newlist_i">
+          <el-card :body-style="{ padding: '0px' }">
+            <img :src="item.src" class="image">
+            <div style="padding: 14px;">
+              <span>{{item.name}}</span>
+              <div class="bottom clearfix">
+                <el-button type="success" round class="button" @click="goDetail(item)">详情</el-button>
+              </div>
+            </div>
+          </el-card>
+        </div>
       </div>
     </div>
   </div>
@@ -32,7 +45,7 @@ export default {
         {
           name:"五龙潭",
           src:require("../../assets/roadItem1.jpeg"),
-          liked:false
+          liked:false,
         },
         {
           name:"五龙潭1",
@@ -75,6 +88,9 @@ export default {
   methods:{
     toMore(){
       this.$router.push({path:'/way'});
+    },
+    goDetail(item){
+      this.$router.push({path:'/way/waydetail'});
     }    
   }
 }

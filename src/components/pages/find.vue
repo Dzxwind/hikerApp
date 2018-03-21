@@ -59,6 +59,7 @@
     <transition name="fade">
       <myMask v-if="isShow"></myMask>    
     </transition>
+    <router-view></router-view>
   </div>
 </template>
 <style lang="scss">

@@ -1,40 +1,57 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import index from '@/components/pages/index'
+import Vue from "vue";
+import Router from "vue-router";
+import index from "@/components/pages/index";
 import find from "@/components/pages/find";
 import way from "@/components/pages/way";
 import diary from "@/components/pages/diary";
 import contact from "@/components/pages/contact";
+import finddetail from "@/components/pages/finddetail";
+import waydetail from "@/components/pages/waydetail";
+import diarydetail from "@/components/pages/diarydetail";
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
+  linkActiveClass: "routerActive",
   routes: [
     {
       path: "/",
       name: "index",
-      // component: resolve => require(["@/components/pages/index"], resolve)
-      component:index
+      component: index
     },
     {
       path: "/find",
       name: "find",
-      component: find
+      component: find,
+      children: [
+        {
+          path: "finddetail",
+          component: finddetail
+        }
+      ]
     },
     {
       path: "/way",
       name: "way",
-      component: way
+      component: way,
+      children: [{
+        path:"waydetail",
+        component:waydetail
+      }]
     },
     {
       path: "/diary",
       name: "diary",
-      component: diary
+      component: diary,
+      children: [{
+        path:"diarydetail",
+        component:diarydetail
+      }]
     },
     {
       path: "/contact",
       name: "contact",
-      component: contact
+      component: contact,
     }
   ]
 });

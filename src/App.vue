@@ -26,4 +26,8 @@ body{
 #app {
   font-family: "Microsoft YaHei";
 }
+.router-link-exact-active{
+  color: #3eacb9 !important;
+  font-weight: bold;
+}
 </style>
