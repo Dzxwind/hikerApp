@@ -4,10 +4,10 @@
     <div class="logo">LOGO</div>
     <div class="pcLink">
       <router-link to="/">首&nbsp;&nbsp;页</router-link>
-      <router-link to="find">发&nbsp;&nbsp;现</router-link>
-      <router-link to="way">路&nbsp;&nbsp;线</router-link>
-      <router-link to="diary">游&nbsp;&nbsp;记</router-link>
-      <router-link to="contact">联&nbsp;&nbsp;系</router-link>
+      <router-link to="/find">发&nbsp;&nbsp;现</router-link>
+      <router-link to="/way">路&nbsp;&nbsp;线</router-link>
+      <router-link to="/diary">游&nbsp;&nbsp;记</router-link>
+      <router-link to="/contact">联&nbsp;&nbsp;系</router-link>
     </div>
     <div class="mobileLink">
       <div class="mobile__button" @click="menuSwitch()"><img src="../assets/menu.png" alt=""></div>
