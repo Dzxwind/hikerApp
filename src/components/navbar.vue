@@ -39,7 +39,6 @@
     }
   },
   methods:{
-    // 监听滚动事件（有问题）
     scrolled(){
       this.scroll = document.documentElement.scrollTop || document.body.scrollTop;
       if (this.scroll > 50) {

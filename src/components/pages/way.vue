@@ -107,10 +107,21 @@ export default {
   methods:{
     changeNav(){
       this.isActive = true;
+    },
+    // 使用json数据
+    test(response){
+      console.log(response.data);
     }
   },
   components:{
     subBanner,
+  },
+  created(){
+    // 请求json
+    this.$http.get('./static/data/user.json')
+    .then((response) => {
+      this.test(response);
+    })
   }
 };
 </script>
