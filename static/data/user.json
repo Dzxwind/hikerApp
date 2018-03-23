@@ -1,1158 +1,302 @@
 [
   {
-    "article_id": 6,
-    "way_id": 8,
-    "user_sign": "Anim eiusmod id laboris et consectetur eiusmod.",
-    "user_age": 18,
-    "user_sex": "女",
+    "user_id": "5ab469bf370e465e2b445e35",
+    "user_index": 0,
+    "user_name": "Bennett",
     "user_img": "../images/headImg0.jpg",
-    "user_name": "Maxine",
-    "index": 0,
-    "user_id": "5aaa43c811e88d85ab3c1b0d"
+    "user_sex": "女",
+    "user_sign": "",
+    "way_index": [2, 10, 14],
+    "article_index": [7, 1]
   },
   {
-    "article_id": 18,
-    "way_id": 11,
-    "user_sign":
-      "Voluptate aute voluptate velit pariatur qui cupidatat officia dolor consectetur ea.",
-    "user_age": 75,
-    "user_sex": "男",
+    "user_id": "5ab469bf43227c059fda7b86",
+    "user_index": 1,
+    "user_name": "Vance",
     "user_img": "../images/headImg1.jpg",
-    "user_name": "Chrystal",
-    "index": 1,
-    "user_id": "5aaa43c81a06d1b490d7ca95"
+    "user_sex": "女",
+    "user_sign": "",
+    "way_index": [14, 0],
+    "article_index": [13, 1]
   },
   {
-    "article_id": 17,
-    "way_id": 9,
-    "user_sign":
-      "Tempor fugiat incididunt proident ea tempor cillum officia laborum veniam aute reprehenderit ad.",
-    "user_age": 77,
-    "user_sex": "男",
+    "user_id": "5ab469bf4037dad0edd66a5f",
+    "user_index": 2,
+    "user_name": "Walters",
     "user_img": "../images/headImg2.jpg",
-    "user_name": "Lillie",
-    "index": 2,
-    "user_id": "5aaa43c80d8cd04437f243f4"
+    "user_sex": "女",
+    "user_sign": "",
+    "way_index": [9],
+    "article_index": [5, 17]
   },
   {
-    "article_id": 6,
-    "way_id": 10,
-    "user_sign": "Qui ea deserunt non reprehenderit.",
-    "user_age": 80,
-    "user_sex": "男",
+    "user_id": "5ab469bf71d327333b49a48b",
+    "user_index": 3,
+    "user_name": "Black",
     "user_img": "../images/headImg3.jpg",
-    "user_name": "Corinne",
-    "index": 3,
-    "user_id": "5aaa43c8f626434a4bbed977"
+    "user_sex": "女",
+    "user_sign": "",
+    "way_index": [6, 19, 1, 12, 3],
+    "article_index": [2, 2]
   },
   {
-    "article_id": 9,
-    "way_id": 14,
-    "user_sign": "Sunt Lorem qui nostrud ad qui labore velit.",
-    "user_age": 79,
-    "user_sex": "男",
+    "user_id": "5ab469bfcde1b2b06722e538",
+    "user_index": 4,
+    "user_name": "Avila",
     "user_img": "../images/headImg4.jpg",
-    "user_name": "Ophelia",
-    "index": 4,
-    "user_id": "5aaa43c8df316a88eb2869d3"
+    "user_sex": "男",
+    "user_sign": "",
+    "way_index": [12, 2, 3, 18, 5, 7, 16, 15],
+    "article_index": [19, 15]
   },
   {
-    "article_id": 19,
-    "way_id": 19,
-    "user_sign": "Dolor cillum incididunt quis aliqua sint aliqua.",
-    "user_age": 37,
-    "user_sex": "男",
+    "user_id": "5ab469bfe399b5618f74f6bf",
+    "user_index": 5,
+    "user_name": "Glass",
     "user_img": "../images/headImg5.jpg",
-    "user_name": "Jasmine",
-    "index": 5,
-    "user_id": "5aaa43c8b78d890585fd0c0c"
+    "user_sex": "男",
+    "user_sign": "",
+    "way_index": [2, 19, 11, 6, 7, 4, 12],
+    "article_index": [9, 6]
   },
   {
-    "article_id": 12,
-    "way_id": 10,
-    "user_sign":
-      "Quis tempor id enim ipsum labore sit nostrud cupidatat et anim quis irure excepteur ut.",
-    "user_age": 59,
-    "user_sex": "男",
+    "user_id": "5ab469bf820aa2bce30324a1",
+    "user_index": 6,
+    "user_name": "Dunn",
     "user_img": "../images/headImg6.jpg",
-    "user_name": "Ruiz",
-    "index": 6,
-    "user_id": "5aaa43c8f26363f932ddd5b7"
+    "user_sex": "女",
+    "user_sign": "",
+    "way_index": [1, 11, 14],
+    "article_index": [14, 18]
   },
   {
-    "article_id": 14,
-    "way_id": 0,
-    "user_sign": "Laboris tempor culpa irure aute.",
-    "user_age": 69,
-    "user_sex": "男",
+    "user_id": "5ab469bfc862f12603e851a4",
+    "user_index": 7,
+    "user_name": "Murphy",
     "user_img": "../images/headImg7.jpg",
-    "user_name": "Wilder",
-    "index": 7,
-    "user_id": "5aaa43c8f3793de7826bbdf6"
+    "user_sex": "女",
+    "user_sign": "",
+    "way_index": [10, 13, 4, 17],
+    "article_index": [11]
   },
   {
-    "article_id": 15,
-    "way_id": 16,
-    "user_sign":
-      "Nostrud laboris exercitation ad velit tempor culpa et officia ullamco non do irure.",
-    "user_age": 44,
-    "user_sex": "女",
+    "user_id": "5ab469bf1011ba1fe53eb065",
+    "user_index": 8,
+    "user_name": "Stephenson",
     "user_img": "../images/headImg8.jpg",
-    "user_name": "Griffith",
-    "index": 8,
-    "user_id": "5aaa43c84509271d45b0ee76"
+    "user_sex": "男",
+    "user_sign": "",
+    "way_index": [3, 13, 13, 0, 3, 10, 2, 3],
+    "article_index": [11]
   },
   {
-    "article_id": 18,
-    "way_id": 4,
-    "user_sign": "Irure excepteur pariatur velit nisi ut aliqua elit id.",
-    "user_age": 76,
-    "user_sex": "女",
+    "user_id": "5ab469c00beda9b2b69ceeb6",
+    "user_index": 9,
+    "user_name": "Donovan",
     "user_img": "../images/headImg9.jpg",
-    "user_name": "Belinda",
-    "index": 9,
-    "user_id": "5aaa43c80645422b77d49a1b"
+    "user_sex": "女",
+    "user_sign": "",
+    "way_index": [0, 12, 14, 7, 1, 2],
+    "article_index": [19]
   },
   {
-    "article_id": 16,
-    "way_id": 4,
-    "user_sign":
-      "Dolor dolor eu deserunt voluptate et ea cillum occaecat esse culpa officia Lorem esse.",
-    "user_age": 39,
-    "user_sex": "男",
+    "user_id": "5ab469c0026495158ff32f51",
+    "user_index": 10,
+    "user_name": "Blankenship",
     "user_img": "../images/headImg10.jpg",
-    "user_name": "Salazar",
-    "index": 10,
-    "user_id": "5aaa43c8333b85a395a7cef2"
+    "user_sex": "女",
+    "user_sign": "",
+    "way_index": [6, 8, 13],
+    "article_index": []
   },
   {
-    "article_id": 10,
-    "way_id": 7,
-    "user_sign":
-      "Quis in velit irure anim mollit dolor sit nulla laborum fugiat do.",
-    "user_age": 50,
-    "user_sex": "女",
+    "user_id": "5ab469c01c0df00cf73db7cd",
+    "user_index": 11,
+    "user_name": "Shepard",
     "user_img": "../images/headImg11.jpg",
-    "user_name": "Juliana",
-    "index": 11,
-    "user_id": "5aaa43c88ea39893ecf0b608"
-  },
-  {
-    "article_id": 1,
-    "way_id": 6,
-    "user_sign":
-      "Quis incididunt reprehenderit incididunt et occaecat duis esse sit ex velit est sint.",
-    "user_age": 30,
-    "user_sex": "男",
-    "user_img": "../images/headImg12.jpg",
-    "user_name": "Sandoval",
-    "index": 12,
-    "user_id": "5aaa43c8956bba4a1125cb4e"
-  },
-  {
-    "article_id": 19,
-    "way_id": 3,
-    "user_sign":
-      "Amet deserunt ullamco sint Lorem tempor proident voluptate adipisicing aliqua mollit est.",
-    "user_age": 66,
-    "user_sex": "男",
-    "user_img": "../images/headImg13.jpg",
-    "user_name": "Mcdowell",
-    "index": 13,
-    "user_id": "5aaa43c86cfef72011ef31dd"
-  },
-  {
-    "article_id": 12,
-    "way_id": 16,
-    "user_sign": "Dolore ipsum nulla mollit veniam velit est.",
-    "user_age": 68,
     "user_sex": "女",
-    "user_img": "../images/headImg14.jpg",
-    "user_name": "Ilene",
-    "index": 14,
-    "user_id": "5aaa43c8f53e2168ae69d44f"
+    "user_sign": "",
+    "way_index": [3, 17, 13, 6, 4, 13, 17],
+    "article_index": [16]
   },
   {
-    "article_id": 15,
-    "way_id": 17,
-    "user_sign":
-      "Proident dolor anim elit tempor labore minim pariatur cillum qui irure tempor proident tempor.",
-    "user_age": 41,
-    "user_sex": "女",
-    "user_img": "../images/headImg15.jpg",
-    "user_name": "Henson",
-    "index": 15,
-    "user_id": "5aaa43c85a6753c1ad47153e"
-  },
-  {
-    "article_id": 1,
-    "way_id": 11,
-    "user_sign":
-      "Ullamco reprehenderit excepteur laborum cupidatat ut sit qui ex proident dolor voluptate Lorem culpa reprehenderit.",
-    "user_age": 22,
-    "user_sex": "女",
-    "user_img": "../images/headImg16.jpg",
-    "user_name": "Clarke",
-    "index": 16,
-    "user_id": "5aaa43c83ba97b21566f1b5f"
-  },
-  {
-    "article_id": 0,
-    "way_id": 9,
-    "user_sign":
-      "Adipisicing excepteur consequat ut deserunt irure Lorem incididunt.",
-    "user_age": 45,
-    "user_sex": "男",
-    "user_img": "../images/headImg17.jpg",
-    "user_name": "Ofelia",
-    "index": 17,
-    "user_id": "5aaa43c8adc5548956b82953"
-  },
-  {
-    "article_id": 13,
-    "way_id": 5,
-    "user_sign": "Aliqua occaecat ipsum fugiat quis ad dolor.",
-    "user_age": 45,
-    "user_sex": "男",
-    "user_img": "../images/headImg18.jpg",
-    "user_name": "Sasha",
-    "index": 18,
-    "user_id": "5aaa43c8c9ae59ccb00efb1e"
-  },
-  {
-    "article_id": 0,
-    "way_id": 9,
-    "user_sign": "Laborum ipsum nisi sit occaecat anim.",
-    "user_age": 36,
-    "user_sex": "女",
-    "user_img": "../images/headImg19.jpg",
-    "user_name": "Frances",
-    "index": 19,
-    "user_id": "5aaa43c89b1db852700a4c50"
-  },
-  {
-    "article_id": 14,
-    "way_id": 11,
-    "user_sign": "Amet et in in sit fugiat et sint.",
-    "user_age": 64,
-    "user_sex": "男",
-    "user_img": "../images/headImg20.jpg",
-    "user_name": "Randi",
-    "index": 20,
-    "user_id": "5aaa43c8908698edb5ddd3da"
-  },
-  {
-    "article_id": 3,
-    "way_id": 1,
-    "user_sign":
-      "Reprehenderit duis consequat nostrud enim enim officia Lorem.",
-    "user_age": 31,
-    "user_sex": "男",
-    "user_img": "../images/headImg21.jpg",
-    "user_name": "Joyce",
-    "index": 21,
-    "user_id": "5aaa43c8153540b24abe178a"
-  },
-  {
-    "article_id": 13,
-    "way_id": 15,
-    "user_sign":
-      "Ut adipisicing ea ipsum amet officia nulla laborum ullamco laborum deserunt adipisicing est.",
-    "user_age": 34,
-    "user_sex": "男",
-    "user_img": "../images/headImg22.jpg",
-    "user_name": "Alyssa",
-    "index": 22,
-    "user_id": "5aaa43c8ef5e454bbdaba309"
-  },
-  {
-    "article_id": 16,
-    "way_id": 18,
-    "user_sign": "Irure elit deserunt aute quis.",
-    "user_age": 57,
-    "user_sex": "女",
-    "user_img": "../images/headImg23.jpg",
-    "user_name": "Reyes",
-    "index": 23,
-    "user_id": "5aaa43c8df152f28ce0ef124"
-  },
-  {
-    "article_id": 20,
-    "way_id": 9,
-    "user_sign": "In duis ea anim occaecat ullamco excepteur id esse.",
-    "user_age": 20,
-    "user_sex": "男",
-    "user_img": "../images/headImg24.jpg",
-    "user_name": "Carly",
-    "index": 24,
-    "user_id": "5aaa43c8f5c4c8ee0250b0d8"
-  },
-  {
-    "article_id": 5,
-    "way_id": 12,
-    "user_sign": "Enim commodo est nulla pariatur reprehenderit aute do.",
-    "user_age": 79,
-    "user_sex": "女",
-    "user_img": "../images/headImg25.jpg",
-    "user_name": "Fernandez",
-    "index": 25,
-    "user_id": "5aaa43c868be3ddeb4c0ddd4"
-  },
-  {
-    "article_id": 20,
-    "way_id": 20,
-    "user_sign":
-      "Cupidatat elit magna quis aliqua proident velit officia culpa sit reprehenderit ullamco nulla.",
-    "user_age": 30,
-    "user_sex": "男",
-    "user_img": "../images/headImg26.jpg",
-    "user_name": "Rosie",
-    "index": 26,
-    "user_id": "5aaa43c8f2896b2796fcbd65"
-  },
-  {
-    "article_id": 16,
-    "way_id": 2,
-    "user_sign":
-      "Id cillum incididunt exercitation non officia sunt et id est sit magna reprehenderit enim.",
-    "user_age": 74,
-    "user_sex": "男",
-    "user_img": "../images/headImg27.jpg",
-    "user_name": "Justine",
-    "index": 27,
-    "user_id": "5aaa43c8fc9b0ebadb450446"
-  },
-  {
-    "article_id": 9,
-    "way_id": 3,
-    "user_sign": "Duis id nostrud nulla esse est ex culpa non.",
-    "user_age": 38,
-    "user_sex": "女",
-    "user_img": "../images/headImg28.jpg",
-    "user_name": "Rosales",
-    "index": 28,
-    "user_id": "5aaa43c8e9b5d2c874ed279a"
-  },
-  {
-    "article_id": 2,
-    "way_id": 3,
-    "user_sign": "Ad minim voluptate quis et irure do aliquip.",
-    "user_age": 79,
-    "user_sex": "男",
-    "user_img": "../images/headImg29.jpg",
-    "user_name": "Mitzi",
-    "index": 29,
-    "user_id": "5aaa43c803e330a47aba1493"
-  },
-  {
-    "article_id": 12,
-    "way_id": 7,
-    "user_sign":
-      "Sint nisi cillum qui eiusmod ut anim veniam laboris irure id cupidatat enim ea amet.",
-    "user_age": 50,
-    "user_sex": "女",
-    "user_img": "../images/headImg30.jpg",
-    "user_name": "Dawson",
-    "index": 30,
-    "user_id": "5aaa43c869c697ccbf2772b8"
-  },
-  {
-    "article_id": 7,
-    "way_id": 2,
-    "user_sign":
-      "Eiusmod velit non ullamco pariatur ut ullamco nostrud nostrud fugiat.",
-    "user_age": 43,
-    "user_sex": "男",
-    "user_img": "../images/headImg31.jpg",
+    "user_id": "5ab469c0aee44b6e436b680e",
+    "user_index": 12,
     "user_name": "Allison",
-    "index": 31,
-    "user_id": "5aaa43c8bb15f5cba28ec5d6"
+    "user_img": "../images/headImg12.jpg",
+    "user_sex": "男",
+    "user_sign": "",
+    "way_index": [8, 14, 9, 5],
+    "article_index": [12, 20]
   },
   {
-    "article_id": 2,
-    "way_id": 15,
-    "user_sign": "Ea nulla aliquip ex anim consequat excepteur adipisicing.",
-    "user_age": 66,
+    "user_id": "5ab469c01030721903d806e6",
+    "user_index": 13,
+    "user_name": "Marsh",
+    "user_img": "../images/headImg13.jpg",
     "user_sex": "女",
-    "user_img": "../images/headImg32.jpg",
-    "user_name": "Noble",
-    "index": 32,
-    "user_id": "5aaa43c8e88ed365c1ab12d7"
+    "user_sign": "",
+    "way_index": [],
+    "article_index": [15]
   },
   {
-    "article_id": 14,
-    "way_id": 15,
-    "user_sign":
-      "Id do incididunt occaecat voluptate mollit et consectetur consequat cupidatat est do elit.",
-    "user_age": 68,
+    "user_id": "5ab469c02bba18414d92e4ac",
+    "user_index": 14,
+    "user_name": "Berg",
+    "user_img": "../images/headImg14.jpg",
+    "user_sex": "男",
+    "user_sign": "",
+    "way_index": [18],
+    "article_index": [13, 0]
+  },
+  {
+    "user_id": "5ab469c0f00e0d24e99ab409",
+    "user_index": 15,
+    "user_name": "Schroeder",
+    "user_img": "../images/headImg15.jpg",
     "user_sex": "女",
-    "user_img": "../images/headImg33.jpg",
-    "user_name": "Hodges",
-    "index": 33,
-    "user_id": "5aaa43c89d06f8a3f55b3ab4"
+    "user_sign": "",
+    "way_index": [6],
+    "article_index": [4, 19]
   },
   {
-    "article_id": 6,
-    "way_id": 3,
-    "user_sign":
-      "Quis do duis culpa velit ad nisi tempor id tempor reprehenderit eu.",
-    "user_age": 45,
-    "user_sex": "男",
-    "user_img": "../images/headImg34.jpg",
-    "user_name": "Norma",
-    "index": 34,
-    "user_id": "5aaa43c80d42cdbb1fcc6e06"
-  },
-  {
-    "article_id": 20,
-    "way_id": 16,
-    "user_sign":
-      "Laborum minim incididunt incididunt voluptate aliquip culpa non mollit.",
-    "user_age": 39,
-    "user_sex": "男",
-    "user_img": "../images/headImg35.jpg",
-    "user_name": "Manning",
-    "index": 35,
-    "user_id": "5aaa43c8cf48aa19fc4e662c"
-  },
-  {
-    "article_id": 1,
-    "way_id": 16,
-    "user_sign": "Et non labore enim ex eu amet voluptate cillum adipisicing.",
-    "user_age": 26,
+    "user_id": "5ab469c02aaecf13110f3403",
+    "user_index": 16,
+    "user_name": "Callahan",
+    "user_img": "../images/headImg16.jpg",
     "user_sex": "女",
-    "user_img": "../images/headImg36.jpg",
-    "user_name": "Lou",
-    "index": 36,
-    "user_id": "5aaa43c822d1ebb7fed74c72"
+    "user_sign": "",
+    "way_index": [17, 8, 1, 12, 10, 19, 9, 1],
+    "article_index": []
   },
   {
-    "article_id": 5,
-    "way_id": 1,
-    "user_sign":
-      "Sint sunt minim adipisicing ex irure et incididunt voluptate minim.",
-    "user_age": 80,
-    "user_sex": "男",
-    "user_img": "../images/headImg37.jpg",
-    "user_name": "Simmons",
-    "index": 37,
-    "user_id": "5aaa43c899424ac3a1ca30e0"
-  },
-  {
-    "article_id": 8,
-    "way_id": 0,
-    "user_sign": "Id sit ea anim esse aute.",
-    "user_age": 42,
-    "user_sex": "男",
-    "user_img": "../images/headImg38.jpg",
-    "user_name": "Stewart",
-    "index": 38,
-    "user_id": "5aaa43c85042f050aeec4c9d"
-  },
-  {
-    "article_id": 6,
-    "way_id": 1,
-    "user_sign": "Cillum anim excepteur quis occaecat eiusmod.",
-    "user_age": 43,
-    "user_sex": "男",
-    "user_img": "../images/headImg39.jpg",
-    "user_name": "Melanie",
-    "index": 39,
-    "user_id": "5aaa43c88de75f08999a6c66"
-  },
-  {
-    "article_id": 15,
-    "way_id": 0,
-    "user_sign":
-      "Nostrud incididunt dolor ad est exercitation duis ea proident tempor.",
-    "user_age": 37,
+    "user_id": "5ab469c034a4c6bd7c96b40e",
+    "user_index": 17,
+    "user_name": "Conley",
+    "user_img": "../images/headImg17.jpg",
     "user_sex": "女",
-    "user_img": "../images/headImg40.jpg",
-    "user_name": "Figueroa",
-    "index": 40,
-    "user_id": "5aaa43c896de59bc10ff0da0"
+    "user_sign": "",
+    "way_index": [19, 7, 7, 11, 4, 8],
+    "article_index": []
   },
   {
-    "article_id": 2,
-    "way_id": 0,
-    "user_sign": "Amet mollit minim enim incididunt quis nostrud.",
-    "user_age": 19,
-    "user_sex": "女",
-    "user_img": "../images/headImg41.jpg",
-    "user_name": "Bonnie",
-    "index": 41,
-    "user_id": "5aaa43c8f9cbe9e7bd9e899a"
-  },
-  {
-    "article_id": 12,
-    "way_id": 0,
-    "user_sign":
-      "Cillum ut velit sunt in aliqua consequat nostrud ex do laboris exercitation enim elit minim.",
-    "user_age": 72,
+    "user_id": "5ab469c075e7571c4de5a92f",
+    "user_index": 18,
+    "user_name": "Mccarthy",
+    "user_img": "../images/headImg18.jpg",
     "user_sex": "男",
-    "user_img": "../images/headImg42.jpg",
-    "user_name": "Trujillo",
-    "index": 42,
-    "user_id": "5aaa43c80c4f1705daeb2bc4"
+    "user_sign": "",
+    "way_index": [11],
+    "article_index": [18, 11]
   },
   {
-    "article_id": 14,
-    "way_id": 6,
-    "user_sign": "Proident voluptate qui occaecat fugiat.",
-    "user_age": 16,
+    "user_id": "5ab469c0361fdd219929be9e",
+    "user_index": 19,
+    "user_name": "Clemons",
+    "user_img": "../images/headImg19.jpg",
     "user_sex": "男",
-    "user_img": "../images/headImg43.jpg",
-    "user_name": "Anderson",
-    "index": 43,
-    "user_id": "5aaa43c849dcf6d6024ff56f"
+    "user_sign": "",
+    "way_index": [10, 16, 20, 3],
+    "article_index": [13]
   },
   {
-    "article_id": 14,
-    "way_id": 0,
-    "user_sign": "Voluptate do amet tempor culpa.",
-    "user_age": 18,
+    "user_id": "5ab469c00eb031d6412626dd",
+    "user_index": 20,
+    "user_name": "Fletcher",
+    "user_img": "../images/headImg20.jpg",
     "user_sex": "女",
-    "user_img": "../images/headImg44.jpg",
-    "user_name": "Simone",
-    "index": 44,
-    "user_id": "5aaa43c8d1a46bdd65ba234b"
+    "user_sign": "",
+    "way_index": [9],
+    "article_index": [20, 11]
   },
   {
-    "article_id": 5,
-    "way_id": 17,
-    "user_sign": "Irure sunt reprehenderit eu labore sint.",
-    "user_age": 18,
+    "user_id": "5ab469c0767cc8aaf9e9806b",
+    "user_index": 21,
+    "user_name": "Gardner",
+    "user_img": "../images/headImg21.jpg",
     "user_sex": "女",
-    "user_img": "../images/headImg45.jpg",
-    "user_name": "Tara",
-    "index": 45,
-    "user_id": "5aaa43c84e4d68ea3bb0b886"
+    "user_sign": "",
+    "way_index": [18, 2],
+    "article_index": [20]
   },
   {
-    "article_id": 18,
-    "way_id": 17,
-    "user_sign": "Id anim ut pariatur labore minim reprehenderit.",
-    "user_age": 70,
+    "user_id": "5ab469c0e8152e59965950f8",
+    "user_index": 22,
+    "user_name": "Avery",
+    "user_img": "../images/headImg22.jpg",
     "user_sex": "男",
-    "user_img": "../images/headImg46.jpg",
-    "user_name": "Rivers",
-    "index": 46,
-    "user_id": "5aaa43c84ea8c6978bdf4908"
+    "user_sign": "",
+    "way_index": [10],
+    "article_index": [5]
   },
   {
-    "article_id": 13,
-    "way_id": 1,
-    "user_sign":
-      "Veniam Lorem Lorem labore aliqua qui irure tempor magna veniam dolor magna non.",
-    "user_age": 24,
-    "user_sex": "男",
-    "user_img": "../images/headImg47.jpg",
-    "user_name": "Kim",
-    "index": 47,
-    "user_id": "5aaa43c8b00fa4d411aaf42a"
-  },
-  {
-    "article_id": 8,
-    "way_id": 15,
-    "user_sign":
-      "Officia reprehenderit Lorem labore duis non anim est consequat labore ullamco.",
-    "user_age": 43,
-    "user_sex": "女",
-    "user_img": "../images/headImg48.jpg",
-    "user_name": "Lee",
-    "index": 48,
-    "user_id": "5aaa43c8ccf7789d01c92fea"
-  },
-  {
-    "article_id": 12,
-    "way_id": 9,
-    "user_sign": "Tempor ut deserunt ex veniam officia incididunt.",
-    "user_age": 41,
-    "user_sex": "女",
-    "user_img": "../images/headImg49.jpg",
-    "user_name": "Pruitt",
-    "index": 49,
-    "user_id": "5aaa43c809a03261b0be6e10"
-  },
-  {
-    "article_id": 16,
-    "way_id": 14,
-    "user_sign": "Voluptate voluptate qui ad fugiat dolore mollit.",
-    "user_age": 19,
-    "user_sex": "男",
-    "user_img": "../images/headImg50.jpg",
-    "user_name": "Rosanna",
-    "index": 50,
-    "user_id": "5aaa43c8a01d0257b330e625"
-  },
-  {
-    "article_id": 11,
-    "way_id": 12,
-    "user_sign":
-      "Reprehenderit voluptate velit sit velit esse velit voluptate do.",
-    "user_age": 70,
-    "user_sex": "男",
-    "user_img": "../images/headImg51.jpg",
-    "user_name": "Davenport",
-    "index": 51,
-    "user_id": "5aaa43c8ac0feed494b703c6"
-  },
-  {
-    "article_id": 4,
-    "way_id": 8,
-    "user_sign":
-      "Mollit ullamco sit est velit sint consectetur sint officia nisi duis.",
-    "user_age": 20,
-    "user_sex": "女",
-    "user_img": "../images/headImg52.jpg",
-    "user_name": "Bird",
-    "index": 52,
-    "user_id": "5aaa43c8034eebe2ed9289e5"
-  },
-  {
-    "article_id": 13,
-    "way_id": 9,
-    "user_sign":
-      "Nostrud pariatur mollit est laboris ipsum reprehenderit voluptate est occaecat nostrud sit consectetur nisi.",
-    "user_age": 43,
-    "user_sex": "男",
-    "user_img": "../images/headImg53.jpg",
-    "user_name": "Mattie",
-    "index": 53,
-    "user_id": "5aaa43c8366804a632e88410"
-  },
-  {
-    "article_id": 9,
-    "way_id": 12,
-    "user_sign": "Duis fugiat enim est ut deserunt do.",
-    "user_age": 66,
-    "user_sex": "女",
-    "user_img": "../images/headImg54.jpg",
+    "user_id": "5ab469c04cb370fa68858690",
+    "user_index": 23,
     "user_name": "Dunlap",
-    "index": 54,
-    "user_id": "5aaa43c8fbbd4ed213cecd1a"
-  },
-  {
-    "article_id": 18,
-    "way_id": 3,
-    "user_sign": "Exercitation non voluptate ea aute.",
-    "user_age": 35,
+    "user_img": "../images/headImg23.jpg",
     "user_sex": "男",
-    "user_img": "../images/headImg55.jpg",
-    "user_name": "Bernice",
-    "index": 55,
-    "user_id": "5aaa43c891e662d0798018fb"
+    "user_sign": "",
+    "way_index": [19, 7],
+    "article_index": [5]
   },
   {
-    "article_id": 14,
-    "way_id": 19,
-    "user_sign":
-      "Id in mollit sint mollit nulla nostrud eiusmod aliquip sunt enim.",
-    "user_age": 65,
+    "user_id": "5ab469c05e8d37d7e0aeee40",
+    "user_index": 24,
+    "user_name": "Pena",
+    "user_img": "../images/headImg24.jpg",
     "user_sex": "男",
-    "user_img": "../images/headImg56.jpg",
-    "user_name": "Pate",
-    "index": 56,
-    "user_id": "5aaa43c867314e856614aaca"
+    "user_sign": "",
+    "way_index": [16, 2, 12, 8, 11, 5, 19],
+    "article_index": [2]
   },
   {
-    "article_id": 7,
-    "way_id": 19,
-    "user_sign": "Nisi sunt ut eiusmod aliquip minim irure non.",
-    "user_age": 34,
-    "user_sex": "女",
-    "user_img": "../images/headImg57.jpg",
-    "user_name": "Mendez",
-    "index": 57,
-    "user_id": "5aaa43c88dd8c15d98010637"
-  },
-  {
-    "article_id": 20,
-    "way_id": 20,
-    "user_sign": "Amet in eu dolor commodo.",
-    "user_age": 20,
-    "user_sex": "女",
-    "user_img": "../images/headImg58.jpg",
-    "user_name": "Mclean",
-    "index": 58,
-    "user_id": "5aaa43c85267de91efb081bf"
-  },
-  {
-    "article_id": 14,
-    "way_id": 12,
-    "user_sign":
-      "Et consectetur ipsum tempor amet veniam enim deserunt consequat amet excepteur mollit tempor labore dolor.",
-    "user_age": 76,
+    "user_id": "5ab469c0c091910ddc93fa55",
+    "user_index": 25,
+    "user_name": "Hinton",
+    "user_img": "../images/headImg25.jpg",
     "user_sex": "男",
-    "user_img": "../images/headImg59.jpg",
-    "user_name": "Mcmillan",
-    "index": 59,
-    "user_id": "5aaa43c8b3f584580dc845d3"
+    "user_sign": "",
+    "way_index": [19, 9, 15, 10, 15, 2],
+    "article_index": [12]
   },
   {
-    "article_id": 10,
-    "way_id": 17,
-    "user_sign": "Velit tempor ut in elit ullamco aute amet.",
-    "user_age": 38,
-    "user_sex": "女",
-    "user_img": "../images/headImg60.jpg",
-    "user_name": "Rogers",
-    "index": 60,
-    "user_id": "5aaa43c84b1e87a31d2020e9"
-  },
-  {
-    "article_id": 8,
-    "way_id": 20,
-    "user_sign":
-      "Ea commodo occaecat dolore sit laboris ad velit nulla pariatur enim incididunt velit.",
-    "user_age": 17,
+    "user_id": "5ab469c027cda0fdd0d36b13",
+    "user_index": 26,
+    "user_name": "Harrell",
+    "user_img": "../images/headImg26.jpg",
     "user_sex": "男",
-    "user_img": "../images/headImg61.jpg",
-    "user_name": "Roseann",
-    "index": 61,
-    "user_id": "5aaa43c84f821a7072ec8601"
+    "user_sign": "",
+    "way_index": [4, 18, 8, 1],
+    "article_index": [3]
   },
   {
-    "article_id": 20,
-    "way_id": 8,
-    "user_sign":
-      "Sit voluptate nulla ullamco elit quis nisi eiusmod nisi ipsum laboris enim qui non.",
-    "user_age": 34,
+    "user_id": "5ab469c1e5e2dce79092db94",
+    "user_index": 27,
+    "user_name": "Shannon",
+    "user_img": "../images/headImg27.jpg",
     "user_sex": "女",
-    "user_img": "../images/headImg62.jpg",
-    "user_name": "Marlene",
-    "index": 62,
-    "user_id": "5aaa43c85f7ed21728edd486"
+    "user_sign": "",
+    "way_index": [],
+    "article_index": [15, 13]
   },
   {
-    "article_id": 7,
-    "way_id": 5,
-    "user_sign":
-      "Enim incididunt ex consectetur pariatur ex aute laboris Lorem anim ipsum sunt ex eiusmod.",
-    "user_age": 11,
-    "user_sex": "女",
-    "user_img": "../images/headImg63.jpg",
-    "user_name": "Simpson",
-    "index": 63,
-    "user_id": "5aaa43c864e56b628e110e24"
-  },
-  {
-    "article_id": 9,
-    "way_id": 16,
-    "user_sign": "Do qui eu fugiat sint deserunt quis.",
-    "user_age": 48,
+    "user_id": "5ab469c142b49dfe8f4e22bf",
+    "user_index": 28,
+    "user_name": "Becker",
+    "user_img": "../images/headImg28.jpg",
     "user_sex": "男",
-    "user_img": "../images/headImg64.jpg",
-    "user_name": "Kemp",
-    "index": 64,
-    "user_id": "5aaa43c827a05b0a8d9920a0"
+    "user_sign": "",
+    "way_index": [18, 6, 13, 17, 0, 0, 7, 8],
+    "article_index": []
   },
   {
-    "article_id": 7,
-    "way_id": 14,
-    "user_sign": "Voluptate et ad dolore incididunt veniam sit qui incididunt.",
-    "user_age": 22,
+    "user_id": "5ab469c184883949ff3a4c12",
+    "user_index": 29,
+    "user_name": "Bolton",
+    "user_img": "../images/headImg29.jpg",
     "user_sex": "女",
-    "user_img": "../images/headImg65.jpg",
-    "user_name": "Reyna",
-    "index": 65,
-    "user_id": "5aaa43c88f7d2d81a6ee0762"
-  },
-  {
-    "article_id": 16,
-    "way_id": 11,
-    "user_sign":
-      "Nulla ipsum tempor quis aute exercitation mollit aliquip fugiat nulla anim.",
-    "user_age": 69,
-    "user_sex": "女",
-    "user_img": "../images/headImg66.jpg",
-    "user_name": "Bentley",
-    "index": 66,
-    "user_id": "5aaa43c84423b8da4782d0e8"
-  },
-  {
-    "article_id": 9,
-    "way_id": 15,
-    "user_sign":
-      "Cillum Lorem esse duis quis veniam ipsum excepteur reprehenderit quis veniam consectetur.",
-    "user_age": 62,
-    "user_sex": "男",
-    "user_img": "../images/headImg67.jpg",
-    "user_name": "Tania",
-    "index": 67,
-    "user_id": "5aaa43c8b30eb4276460d8ea"
-  },
-  {
-    "article_id": 9,
-    "way_id": 4,
-    "user_sign":
-      "Irure ex commodo adipisicing occaecat ut nulla qui non est anim nisi adipisicing do exercitation.",
-    "user_age": 20,
-    "user_sex": "女",
-    "user_img": "../images/headImg68.jpg",
-    "user_name": "Wade",
-    "index": 68,
-    "user_id": "5aaa43c842748e89212e3f7d"
-  },
-  {
-    "article_id": 0,
-    "way_id": 2,
-    "user_sign": "Reprehenderit nostrud irure laboris anim.",
-    "user_age": 29,
-    "user_sex": "女",
-    "user_img": "../images/headImg69.jpg",
-    "user_name": "Kayla",
-    "index": 69,
-    "user_id": "5aaa43c8d24f3c0cf4703e90"
-  },
-  {
-    "article_id": 1,
-    "way_id": 19,
-    "user_sign":
-      "Ad id Lorem do irure commodo labore et non magna sint labore velit.",
-    "user_age": 59,
-    "user_sex": "女",
-    "user_img": "../images/headImg70.jpg",
-    "user_name": "Glover",
-    "index": 70,
-    "user_id": "5aaa43c86c0c1e48ff607b13"
-  },
-  {
-    "article_id": 3,
-    "way_id": 8,
-    "user_sign":
-      "Exercitation duis exercitation quis ea non fugiat nostrud Lorem tempor ullamco aute qui ipsum eiusmod.",
-    "user_age": 53,
-    "user_sex": "女",
-    "user_img": "../images/headImg71.jpg",
-    "user_name": "Nolan",
-    "index": 71,
-    "user_id": "5aaa43c8b9f339adc4e04fad"
-  },
-  {
-    "article_id": 14,
-    "way_id": 5,
-    "user_sign":
-      "Laborum nulla reprehenderit magna voluptate anim dolor nisi mollit nulla.",
-    "user_age": 29,
-    "user_sex": "女",
-    "user_img": "../images/headImg72.jpg",
-    "user_name": "Clements",
-    "index": 72,
-    "user_id": "5aaa43c84822e0c35d74626a"
-  },
-  {
-    "article_id": 19,
-    "way_id": 1,
-    "user_sign": "Elit quis duis culpa dolore.",
-    "user_age": 71,
-    "user_sex": "女",
-    "user_img": "../images/headImg73.jpg",
-    "user_name": "Galloway",
-    "index": 73,
-    "user_id": "5aaa43c88a0ec08c1c9d78a8"
-  },
-  {
-    "article_id": 17,
-    "way_id": 17,
-    "user_sign":
-      "Aliquip duis laboris adipisicing aute enim aute id irure magna.",
-    "user_age": 23,
-    "user_sex": "女",
-    "user_img": "../images/headImg74.jpg",
-    "user_name": "Murray",
-    "index": 74,
-    "user_id": "5aaa43c8c61ff51580241e5f"
-  },
-  {
-    "article_id": 1,
-    "way_id": 19,
-    "user_sign": "Voluptate fugiat et cupidatat excepteur adipisicing esse.",
-    "user_age": 45,
-    "user_sex": "女",
-    "user_img": "../images/headImg75.jpg",
-    "user_name": "Humphrey",
-    "index": 75,
-    "user_id": "5aaa43c82dd8ec2862f4dcb9"
-  },
-  {
-    "article_id": 0,
-    "way_id": 14,
-    "user_sign":
-      "Cillum labore et quis ipsum exercitation elit quis elit labore Lorem.",
-    "user_age": 59,
-    "user_sex": "女",
-    "user_img": "../images/headImg76.jpg",
-    "user_name": "Vilma",
-    "index": 76,
-    "user_id": "5aaa43c85e940e62ba65e4b5"
-  },
-  {
-    "article_id": 8,
-    "way_id": 1,
-    "user_sign": "Id tempor cupidatat ea do culpa esse.",
-    "user_age": 56,
-    "user_sex": "女",
-    "user_img": "../images/headImg77.jpg",
-    "user_name": "Selena",
-    "index": 77,
-    "user_id": "5aaa43c8738e4f5cd4e2456c"
-  },
-  {
-    "article_id": 7,
-    "way_id": 10,
-    "user_sign":
-      "Aute reprehenderit amet Lorem sunt sint esse adipisicing amet sunt nisi adipisicing aute.",
-    "user_age": 38,
-    "user_sex": "女",
-    "user_img": "../images/headImg78.jpg",
-    "user_name": "Coffey",
-    "index": 78,
-    "user_id": "5aaa43c867621322124d0c28"
-  },
-  {
-    "article_id": 5,
-    "way_id": 18,
-    "user_sign":
-      "Velit exercitation aliqua non eu fugiat commodo occaecat non amet esse labore.",
-    "user_age": 35,
-    "user_sex": "女",
-    "user_img": "../images/headImg79.jpg",
-    "user_name": "Wall",
-    "index": 79,
-    "user_id": "5aaa43c883a25e33a941dcaa"
-  },
-  {
-    "article_id": 19,
-    "way_id": 17,
-    "user_sign":
-      "Amet elit elit officia duis consequat cupidatat in reprehenderit qui et mollit adipisicing.",
-    "user_age": 62,
-    "user_sex": "男",
-    "user_img": "../images/headImg80.jpg",
-    "user_name": "Dixon",
-    "index": 80,
-    "user_id": "5aaa43c893275532323f7ffc"
-  },
-  {
-    "article_id": 17,
-    "way_id": 10,
-    "user_sign":
-      "Eiusmod aute laborum do quis do sint et ad eu magna cupidatat.",
-    "user_age": 37,
-    "user_sex": "男",
-    "user_img": "../images/headImg81.jpg",
-    "user_name": "Newman",
-    "index": 81,
-    "user_id": "5aaa43c8c1de7f3aa99a7be4"
-  },
-  {
-    "article_id": 6,
-    "way_id": 13,
-    "user_sign":
-      "Consequat non elit est eiusmod nostrud pariatur et est exercitation Lorem deserunt do nulla nostrud.",
-    "user_age": 35,
-    "user_sex": "女",
-    "user_img": "../images/headImg82.jpg",
-    "user_name": "Aline",
-    "index": 82,
-    "user_id": "5aaa43c884be3fbcd307f663"
-  },
-  {
-    "article_id": 17,
-    "way_id": 11,
-    "user_sign":
-      "Sunt ipsum consectetur velit do tempor enim ullamco enim ex voluptate anim dolor mollit velit.",
-    "user_age": 59,
-    "user_sex": "男",
-    "user_img": "../images/headImg83.jpg",
-    "user_name": "Millicent",
-    "index": 83,
-    "user_id": "5aaa43c87b5f6e750f981a50"
-  },
-  {
-    "article_id": 1,
-    "way_id": 12,
-    "user_sign":
-      "Voluptate esse amet id duis laboris est amet enim fugiat id amet aliquip.",
-    "user_age": 23,
-    "user_sex": "男",
-    "user_img": "../images/headImg84.jpg",
-    "user_name": "Gregory",
-    "index": 84,
-    "user_id": "5aaa43c80847c5ace8c4449c"
-  },
-  {
-    "article_id": 17,
-    "way_id": 1,
-    "user_sign":
-      "Mollit in commodo magna do ad deserunt enim quis nostrud tempor veniam reprehenderit.",
-    "user_age": 25,
-    "user_sex": "男",
-    "user_img": "../images/headImg85.jpg",
-    "user_name": "Sallie",
-    "index": 85,
-    "user_id": "5aaa43c8efb41998f750a34d"
-  },
-  {
-    "article_id": 0,
-    "way_id": 15,
-    "user_sign": "Elit eiusmod consectetur cupidatat velit mollit aute veniam.",
-    "user_age": 20,
-    "user_sex": "女",
-    "user_img": "../images/headImg86.jpg",
-    "user_name": "Maryellen",
-    "index": 86,
-    "user_id": "5aaa43c851a4d604a3489bbb"
-  },
-  {
-    "article_id": 20,
-    "way_id": 13,
-    "user_sign":
-      "Quis eu dolore do officia amet velit ullamco esse sit laborum quis nostrud id occaecat.",
-    "user_age": 73,
-    "user_sex": "女",
-    "user_img": "../images/headImg87.jpg",
-    "user_name": "Arline",
-    "index": 87,
-    "user_id": "5aaa43c8ed286807549a475d"
-  },
-  {
-    "article_id": 5,
-    "way_id": 13,
-    "user_sign":
-      "Duis enim ea elit do ullamco non culpa commodo occaecat sunt.",
-    "user_age": 12,
-    "user_sex": "女",
-    "user_img": "../images/headImg88.jpg",
-    "user_name": "Celia",
-    "index": 88,
-    "user_id": "5aaa43c81a36792605d44cbb"
-  },
-  {
-    "article_id": 8,
-    "way_id": 1,
-    "user_sign":
-      "Incididunt elit minim ut exercitation adipisicing nisi duis est elit sunt voluptate.",
-    "user_age": 66,
-    "user_sex": "男",
-    "user_img": "../images/headImg89.jpg",
-    "user_name": "Eliza",
-    "index": 89,
-    "user_id": "5aaa43c827e9d1cb9305caf8"
-  },
-  {
-    "article_id": 17,
-    "way_id": 20,
-    "user_sign": "Consectetur magna culpa veniam nostrud nisi.",
-    "user_age": 80,
-    "user_sex": "男",
-    "user_img": "../images/headImg90.jpg",
-    "user_name": "Eddie",
-    "index": 90,
-    "user_id": "5aaa43c8b0511bb2a1b1fdd6"
-  },
-  {
-    "article_id": 0,
-    "way_id": 6,
-    "user_sign":
-      "Minim ex elit quis culpa in sunt enim elit nostrud duis do dolor.",
-    "user_age": 24,
-    "user_sex": "女",
-    "user_img": "../images/headImg91.jpg",
-    "user_name": "Mindy",
-    "index": 91,
-    "user_id": "5aaa43c85d2f14367c315e8f"
-  },
-  {
-    "article_id": 17,
-    "way_id": 19,
-    "user_sign": "In aute irure adipisicing duis et.",
-    "user_age": 38,
-    "user_sex": "女",
-    "user_img": "../images/headImg92.jpg",
-    "user_name": "Burch",
-    "index": 92,
-    "user_id": "5aaa43c8d8462561f9117b38"
-  },
-  {
-    "article_id": 3,
-    "way_id": 18,
-    "user_sign": "Aliqua pariatur quis ad officia non.",
-    "user_age": 67,
-    "user_sex": "男",
-    "user_img": "../images/headImg93.jpg",
-    "user_name": "Landry",
-    "index": 93,
-    "user_id": "5aaa43c83406d6f48354be51"
-  },
-  {
-    "article_id": 15,
-    "way_id": 19,
-    "user_sign":
-      "Officia in commodo minim qui ut pariatur ea culpa aute ipsum.",
-    "user_age": 50,
-    "user_sex": "女",
-    "user_img": "../images/headImg94.jpg",
-    "user_name": "Young",
-    "index": 94,
-    "user_id": "5aaa43c839591d5903a39316"
-  },
-  {
-    "article_id": 6,
-    "way_id": 8,
-    "user_sign":
-      "Adipisicing voluptate sint deserunt pariatur voluptate consectetur esse sint consequat commodo ea minim.",
-    "user_age": 44,
-    "user_sex": "女",
-    "user_img": "../images/headImg95.jpg",
-    "user_name": "Carrillo",
-    "index": 95,
-    "user_id": "5aaa43c878d11564b9a446aa"
-  },
-  {
-    "article_id": 19,
-    "way_id": 9,
-    "user_sign": "Nisi nisi deserunt sint proident occaecat pariatur.",
-    "user_age": 34,
-    "user_sex": "女",
-    "user_img": "../images/headImg96.jpg",
-    "user_name": "Duke",
-    "index": 96,
-    "user_id": "5aaa43c89d2e65be08c80164"
-  },
-  {
-    "article_id": 2,
-    "way_id": 5,
-    "user_sign":
-      "Fugiat duis officia laboris dolore dolor anim occaecat proident reprehenderit eu in.",
-    "user_age": 55,
-    "user_sex": "女",
-    "user_img": "../images/headImg97.jpg",
-    "user_name": "Myers",
-    "index": 97,
-    "user_id": "5aaa43c86da91e80dafe39d2"
-  },
-  {
-    "article_id": 19,
-    "way_id": 7,
-    "user_sign": "Veniam proident ex Lorem anim laborum non excepteur tempor.",
-    "user_age": 71,
-    "user_sex": "女",
-    "user_img": "../images/headImg98.jpg",
-    "user_name": "Calderon",
-    "index": 98,
-    "user_id": "5aaa43c8debb49831b8a642e"
-  },
-  {
-    "article_id": 15,
-    "way_id": 8,
-    "user_sign": "Velit deserunt ea sit duis voluptate labore do culpa.",
-    "user_age": 70,
-    "user_sex": "男",
-    "user_img": "../images/headImg99.jpg",
-    "user_name": "Anna",
-    "index": 99,
-    "user_id": "5aaa43c8aacc3e21f4638ff9"
+    "user_sign": "",
+    "way_index": [8, 5, 18, 10],
+    "article_index": [5, 9]
   }
 ]
