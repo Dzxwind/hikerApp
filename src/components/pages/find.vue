@@ -6,10 +6,10 @@
       <div class="recommend">
         <div class="recommendTitle">为您推荐</div>
         <div class="recommendList">
-          <div class="recommendList_i" v-for="(item,index) in recList" v-if="index < 5" :key="item.id" @click="showDetail(item)" >
+          <div class="recommendList_i" v-for="(item,index) in userData" v-if="index < 5" :key="item.user_id" @click="showDetail(item)" >
             <div class="recommendListImg">
-              <img :src="item.imgsrc" alt="">
-              <span class="recommendListName" v-text="item.name"></span>
+              <img :src="item.user_img" alt="">
+              <span class="recommendListName" v-text="item.user_name"></span>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@
         </div>
         <div class="selectSubmit" @click="selectUser()"><img src="../../assets/search.png">搜索</div>
       </div>
-      <transition name="fade">
+      <!-- <transition name="fade">
         <div class="selectListin">
           <div class="selectList_i" v-for="item in filterList" v-if="showFilter" :key="item.id" @click="showDetail(item)" >
               <div class="selectListImg">
@@ -51,15 +51,12 @@
               </div>
             </div>
         </div>
-      </transition>
+      </transition> -->
     </div>
-    <transition name="fade2">
-      <userinfo :userMessage="userMessage" v-if="isShow" @detailHide="hideDetail()"></userinfo>
-    </transition>
-    <transition name="fade">
+    <transition name="el-fade-in">
       <myMask v-if="isShow"></myMask>    
     </transition>
-    <router-view></router-view>
+    <router-view :userMessage="userMessage"></router-view>
   </div>
 </template>
 <style lang="scss">
@@ -67,106 +64,13 @@
 @import "../../assets/scss/pages/find.scss";
 </style>
 <script>
-import userinfo from "./userinfo";
 import myMask from "./../mask";
 import subBanner from "./../subBanner";
 export default {
   name: "find",
   data() {
     return {
-      recList: [
-        {
-          id: "00001",
-          name: "测试用户1",
-          age: "25",
-          ageSelector: "1",
-          sex: "女",
-          gone: ["北京", "洛阳"],
-          sign: "没有人是在快乐中成熟的。痛苦的收获是成长，成长的代价是痛苦。",
-          imgsrc: require("../../assets/headImg1.jpg")
-        },
-        {
-          id: "00002",
-          name: "测试用户2",
-          age: "22",
-          ageSelector: "1",
-          sex: "女",
-          gone: ["南京", "承德"],
-          sign: "我很丑可是我有音乐和啤酒。",
-          imgsrc: require("../../assets/headImg2.jpg")
-        },
-        {
-          id: "00003",
-          name: "测试用户3",
-          age: "26",
-          ageSelector: "1",
-          sex: "男",
-          gone: ["黄山", "丽江", "香格里拉"],
-          sign:
-            "每一个暴肥的现在，都有一个微胖的曾经，我不禁感慨，原来我瘦过。",
-          imgsrc: require("../../assets/headImg3.jpg")
-        },
-        {
-          id: "00004",
-          name: "测试用户4",
-          age: "28",
-          ageSelector: "1",
-          sex: "女",
-          gone: ["呼伦贝尔", "厦门"],
-          sign: "就算全世界的人说你不好，我也愿与全世界为敌",
-          imgsrc: require("../../assets/headImg4.jpg")
-        },
-        {
-          id: "00005",
-          name: "测试用户5",
-          age: "24",
-          ageSelector: "1",
-          sex: "女",
-          gone: ["南宁", "杭州"],
-          sign: "每个人的心中都会装着自己不愿说出来的心酸和无奈",
-          imgsrc: require("../../assets/headImg5.jpg")
-        },
-        {
-          id: "00006",
-          name: "测试用户6",
-          age: "23",
-          ageSelector: "1",
-          sex: "男",
-          gone: ["开封", "泰山"],
-          sign: "君为伊醉笑痴狂，伊为君撕心断肠。",
-          imgsrc: require("../../assets/headImg1.jpg")
-        },
-        {
-          id: "00007",
-          name: "测试用户7",
-          age: "31",
-          ageSelector: "2",
-          sex: "男",
-          gone: ["开封", "泰山"],
-          sign: "君为伊醉笑痴狂，伊为君撕心断肠。",
-          imgsrc: require("../../assets/headImg2.jpg")
-        },
-        {
-          id: "00008",
-          name: "测试用户8",
-          age: "45",
-          ageSelector: "3",
-          sex: "男",
-          gone: ["开封", "泰山", "庐山"],
-          sign: "君为伊醉笑痴狂，伊为君撕心断肠。",
-          imgsrc: require("../../assets/headImg2.jpg")
-        },
-        {
-          id: "00009",
-          name: "测试用户8",
-          age: "19",
-          ageSelector: "0",
-          sex: "男",
-          gone: ["开封", "泰山", "庐山"],
-          sign: "君为伊醉笑痴狂，伊为君撕心断肠。",
-          imgsrc: require("../../assets/headImg2.jpg")
-        }
-      ],
+      userData: [],
       isShow: false,
       userMessage: {},
       sexSelect: "",
@@ -177,7 +81,6 @@ export default {
     };
   },
   components: {
-    userinfo,
     myMask,
     subBanner
   },
@@ -185,6 +88,7 @@ export default {
     showDetail(item) {
       this.userMessage = item;
       this.isShow = true;
+      this.$router.push({path:'/find/finddetail'})
     },
     hideDetail() {
       this.userMessage = {};
@@ -192,21 +96,32 @@ export default {
     },
     selectUser() {
       this.showFilter = true;
+    },
+    getData(response){
+      this.userData = response.data;
     }
   },
-  computed: {
-    filterList() {
-      var sexSelect = this.sexSelect;
-      var ageSelect = this.ageSelect;
-      var goneSelect = this.goneSelect;
-      return this.recList.filter(filterItem => {
-        return (
-          filterItem.sex == sexSelect &&
-          filterItem.ageSelector == ageSelect &&
-          filterItem.gone.length == goneSelect
-        );
-      });
-    }
+  // computed: {
+  //   filterList() {
+  //     var sexSelect = this.sexSelect;
+  //     var ageSelect = this.ageSelect;
+  //     var goneSelect = this.goneSelect;
+  //     return this.userData.filter(filterItem => {
+  //       return (
+  //         filterItem.sex == sexSelect &&
+  //         filterItem.ageSelector == ageSelect &&
+  //         filterItem.gone.length == goneSelect
+  //       );
+  //     });
+  //   }
+  // },
+  created(){
+    // 请求json
+    this.$http.get('./static/data/user.json')
+    .then((response) => {
+      this.getData(response);
+      console.log(this.userData[0])
+    })
   }
 };
 </script>

@@ -1,7 +1,6 @@
 .find {
   .findTitle {
-    font-size: 36px;
-    color: $darkGreen;
+    @include heavyTitle();
   }
   .recommend {
     margin-top: 10px;

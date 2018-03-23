@@ -118,7 +118,7 @@ export default {
   },
   created(){
     // 请求json
-    this.$http.get('./static/data/user.json')
+    this.$http.get('./static/data/way.json')
     .then((response) => {
       this.test(response);
     })

@@ -4,11 +4,12 @@
       user_id: "{{objectId()}}",
       user_index: "{{index()}}",
       user_name: "{{surname()}}",
+      user_age:"{{integer(16,40)}}",
       user_img: function() {
-        return "../images/headImg" + this.user_index + ".jpg";
+        return "../../static/images/headImg/headImg" + this.user_index + ".jpg";
       },
       user_sex: '{{random("男","女")}}',
-      user_sign: "{{lorem('sentences')}}",
+      user_sign: "{{lorem(1,'sentences')}}",
       way_index: [{ "repeat(0,8)": "{{integer(0,20)}}" }],
       article_index: [{ "repeat(0,2)": "{{integer(0,20)}}" }]
     }
@@ -19,7 +20,7 @@
       article_index: "{{index()}}",
       article_name: "{{lorem(8,'words')}}",
       article_img: function() {
-        return "../images/articleImg" + this.article_index + ".jpg";
+        return "../../static/images/articleImg/articleImg" + this.article_index + ".jpg";
       },
       article_content: "{{lorem(1,'paragraphs')}}",
       user_index: "{{integer(30)}}",
@@ -33,7 +34,7 @@
       way_name: "{{lorem(2,'words')}}",
       way_subname:"{{city()}}",
       way_img: function() {
-        return "../images/wayImg" + this.way_index + ".jpg";
+        return "../../static/images/wayImg/wayImg" + this.way_index + ".jpg";
       },
       way_intro: "{{lorem(1,'paragraphs')}}",
       user_index:  [{ "repeat(0,5)": "{{integer(0,30)}}" }],

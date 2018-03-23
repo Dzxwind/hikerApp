@@ -26,3 +26,9 @@ ul {
 p {
   margin: 0;
 }
+
+@mixin heavyTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: $darkGreen;
+}
