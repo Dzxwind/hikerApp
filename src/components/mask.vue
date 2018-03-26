@@ -9,8 +9,5 @@
 </style>
 <script>
 export default {
-  mounted(){
-    console.log("mask in")
-  }
 }
 </script>

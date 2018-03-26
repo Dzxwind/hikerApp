@@ -29,7 +29,7 @@
         @media screen and(max-width:1024px) {
           margin: 10px 18px;
         }
-        @media screen and(max-width: 400px) {
+        @media screen and(max-width: 500px) {
           float: none;
           .recommendListImg {
             img {
@@ -57,8 +57,7 @@
     margin-top: 20px;
     @include clearfix;
     .selectTitle {
-      color: $darkGreen;
-      font-size: 20px;
+      @include heavyTitle();
     }
     .selectList {
       margin: 20px 0;
@@ -80,12 +79,18 @@
           border: 1px solid $greenBlue;
         }
       }
+      .selectGroup{
+        display: inline-block;
+        @media screen and(max-width:450px){
+          margin-top: 10px;
+        }
+      }
     }
     .selectSubmit {
       background-color: $greenBlue;
       float: left;
-      margin: 20px 0;
-      padding: 5px 30px;
+      margin: 27px 0;
+      padding: 2px 30px;
       border-radius: 999px;
       color: #fff;
       font-size: 18px;

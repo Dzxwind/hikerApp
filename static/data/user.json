@@ -8,8 +8,8 @@
     "user_sex": "女",
     "user_sign":
       "Irure amet esse adipisicing incididunt deserunt irure proident tempor est duis.",
-    "way_index": [11, 0, 15, 20],
-    "article_index": [7, 20]
+    "way_index": [11, 0, 15, 19],
+    "article_index": [7, 19]
   },
   {
     "user_id": "5ab4a36bb2aaa237b6052b25",
@@ -19,7 +19,7 @@
     "user_img": "../../static/images/headImg/headImg1.jpg",
     "user_sex": "女",
     "user_sign": "Est deserunt fugiat sint amet ullamco quis ex.",
-    "way_index": [1],
+    "way_index": [2],
     "article_index": [3]
   },
   {
@@ -89,7 +89,7 @@
     "user_img": "../../static/images/headImg/headImg7.jpg",
     "user_sex": "女",
     "user_sign": "Est cillum ullamco nulla eiusmod duis deserunt duis id duis.",
-    "way_index": [0, 2, 20, 1, 14, 7, 14],
+    "way_index": [0, 2, 19, 1, 14, 7, 14],
     "article_index": [11]
   },
   {
@@ -184,7 +184,7 @@
     "user_sex": "女",
     "user_sign":
       "Eiusmod velit quis nisi mollit aliquip fugiat fugiat commodo voluptate nulla et voluptate.",
-    "way_index": [12, 20, 9],
+    "way_index": [12, 19, 9],
     "article_index": [11, 19]
   },
   {
@@ -207,7 +207,7 @@
     "user_sex": "女",
     "user_sign":
       "Incididunt ullamco in minim ipsum ex minim eu deserunt ipsum.",
-    "way_index": [3, 13, 2, 20, 8, 1, 4, 19],
+    "way_index": [3, 13, 2, 18, 8, 1, 4, 19],
     "article_index": []
   },
   {
@@ -348,7 +348,7 @@
     "user_sex": "男",
     "user_sign":
       "Minim consequat elit laborum dolor labore deserunt labore enim eiusmod.",
-    "way_index": [5, 9, 8, 2, 6, 20, 2, 13],
+    "way_index": [5, 9, 8, 2, 6, 19, 2, 13],
     "article_index": []
   }
 ]
