@@ -7,8 +7,8 @@
         <p>性别:{{userMessage.user_sex}}</p>
         <p>年龄:{{userMessage.user_age}}</p>
         <p>个性签名:{{userMessage.user_sign}}</p>
-        <p>曾经去过:<span v-for="item in wayMessage" :key="item.way_id">{{item.way_name}},</span></p>
-        <p>游记:<span v-for="item in articleMessage" :key="item.article_id">《{{item.article_name}}》<br /></span></p>
+        <p>曾经去过:<span v-for="item in wayMessage" :key="item.way_id" @click="linkWay()">{{item.way_name}},</span></p>
+        <p>游记:<span v-for="item in articleMessage" :key="item.article_id" @click="linkArticle()">《{{item.article_name}}》<br /></span></p>
       </div>
       <div class="closeButton" @click="closeDetail()">×</div>
     </div>
@@ -30,10 +30,13 @@ export default {
     closeDetail(){
       this.$emit('closeDialog');
       this.$router.push({path:'/find'});
+    },
+    linkWay(){
+      this.$router.push({path:'/way/waydetail'});      
+    },
+    linkArticle(){
+      this.$router.push({path:'/article/articledetail'});      
     }
   },
-  mounted(){
-    console.log(this.articleMessage);
-  }
 }
 </script>

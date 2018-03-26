@@ -39,18 +39,18 @@
             </el-select>
           </div>
         </div>
-        <el-button type="primary" round  @click="selectUser()" class="selectSubmit" icon="el-icon-search">搜索</el-button>
+        <!-- <el-button type="primary" round  @click="selectUser()" class="selectSubmit" icon="el-icon-search">搜索</el-button> -->
       </div>
-      <!-- <transition name="fade">
+      <transition name="el-zoom-in-top">
         <div class="selectListin">
-          <div class="selectList_i" v-for="item in filterList" v-if="showFilter" :key="item.id" @click="showDetail(item)" >
+          <div class="selectList_i" v-for="(item,index) in userData" :key="item.user_id" @click="showDetail(item)">
               <div class="selectListImg">
-                <img :src="item.imgsrc" alt="">
-                <span class="selectListName" v-text="item.name"></span>
+                <img :src="item.user_img" alt="">
+                <span class="selectListName" v-text="item.user_name"></span>
               </div>
             </div>
         </div>
-      </transition> -->
+      </transition>
     </div>
     <transition name="el-fade-in">
       <myMask v-if="isShow"></myMask>    
@@ -85,7 +85,7 @@ export default {
       whichBanner:"findBanner",
       sex:[
         {
-          value:'all',
+          value:'',
           label:'不限'
         },
         {
@@ -99,7 +99,7 @@ export default {
       ],
       age:[
         {
-          value:'all',
+          value:'',
           label:'不限'
         },
         {
@@ -121,7 +121,7 @@ export default {
       ],
       way:[
         {
-          value:'all',
+          value:'',
           label:'不限'
         },
         {
@@ -134,7 +134,7 @@ export default {
         },
         {
           value:'4',
-          label:'3~4'
+          label:'3~4处'
         },
         {
           value:'100',
