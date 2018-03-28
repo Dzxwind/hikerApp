@@ -173,18 +173,18 @@ export default {
     selectUser() {
       this.showFilter = true;
     },
-    computed:{
-      userData(){
-        return this.$store.state.userData;
-      },
-      wayData(){
-        return this.$store.state.wayData;
-      },
-      articleData(){
-        return this.$store.state.articleData;
-      }
-    }
   },
+  computed:{
+    userData(){
+      return this.$store.state.userData;
+    },
+    wayData(){
+      return this.$store.state.wayData;
+    },
+    articleData(){
+      return this.$store.state.articleData;
+    }
+  }
   // computed: {
   //   filterList() {
   //     var sexSelect = this.sexSelect;
