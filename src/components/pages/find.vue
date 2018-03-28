@@ -43,7 +43,7 @@
       </div>
       <transition name="el-zoom-in-top">
         <div class="selectListin">
-          <div class="selectList_i" v-for="(item,index) in userData" :key="item.user_id" @click="showDetail(item)">
+          <div class="selectList_i" v-for="(item) in userData" :key="item.user_id" @click="showDetail(item)">
               <div class="selectListImg">
                 <img :src="item.user_img" alt="">
                 <span class="selectListName" v-text="item.user_name"></span>
@@ -71,13 +71,7 @@ export default {
   name: "find",
   data() {
     return {
-      userData: [],
-      wayData: [],
-      articleData: [],
       isShow: false,
-      userMessage: {},
-      wayMessage: [],
-      articleMessage: [],
       sexSelect: "",
       ageSelect: "",
       goneSelect: "",
@@ -170,9 +164,6 @@ export default {
         }
       }
     },
-    compare(item){
-
-    },
     hideDetail() {
       this.userMessage = {};
       this.wayMessage = [];
@@ -182,14 +173,16 @@ export default {
     selectUser() {
       this.showFilter = true;
     },
-    getUserData(response){
-      this.userData = response.data;
-    },
-    getWayData(response){
-      this.wayData = response.data;
-    },
-    getArticleData(response){
-      this.articleData = response.data;
+    computed:{
+      userData(){
+        return this.$store.state.userData;
+      },
+      wayData(){
+        return this.$store.state.wayData;
+      },
+      articleData(){
+        return this.$store.state.articleData;
+      }
     }
   },
   // computed: {
@@ -206,20 +199,5 @@ export default {
   //     });
   //   }
   // },
-  created(){
-    // 请求json
-    this.$http.get('./static/data/user.json')
-    .then((response) => {
-      this.getUserData(response);
-    });
-    this.$http.get('./static/data/way.json')
-    .then((response) => {
-      this.getWayData(response);
-    });
-    this.$http.get('./static/data/article.json')
-    .then((response) => {
-      this.getArticleData(response);
-    });
-  }
 };
 </script>

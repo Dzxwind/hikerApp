@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
+import store from './store'
 import $ from "jquery"
 import "./assets/bootstrap/css/bootstrap.min.css"
 import "./assets/bootstrap/js/bootstrap.min"
@@ -20,6 +21,7 @@ Vue.prototype.$http = axios;
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
