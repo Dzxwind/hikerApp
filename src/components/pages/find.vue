@@ -56,7 +56,7 @@
       <myMask v-if="isShow"></myMask>    
     </transition>
     <transition name="el-fade-in">    
-      <router-view :userMessage="userMessage" :wayMessage="wayMessage" :articleMessage="articleMessage" @closeDialog="hideDetail()"></router-view>
+      <router-view :userMessage="userIndex" @closeDialog="hideDetail()"></router-view>
     </transition>
   </div>
 </template>
@@ -138,6 +138,7 @@ export default {
       sexValue:'',
       ageValue:'',
       wayValue:'',
+      userIndex:''
     };
   },
   components: {
@@ -146,28 +147,11 @@ export default {
   },
   methods: {
     showDetail(item) {
-      this.userMessage = item;
       this.isShow = true;
-      this.$router.push({path:'/find/finddetail'});
-      for (let i = 0; i < this.wayData.length; i++) {
-        for (let j = 0; j < item.way_index.length; j++) {
-          if (item.way_index[j] == this.wayData[i].way_index) {
-            this.wayMessage.push(this.wayData[i]);
-          }
-        }
-      }
-      for (let i = 0; i < this.articleData.length; i++) {
-        for (let j = 0; j < item.article_index.length; j++) {
-          if (item.article_index[j] == this.articleData[i].article_index) {
-            this.articleMessage.push(this.articleData[i]);
-          }
-        }
-      }
+      this.$router.push({path:`/find/finddetail/${item.user_index}`});
+      // this.userIndex = item.user_index;
     },
     hideDetail() {
-      this.userMessage = {};
-      this.wayMessage = [];
-      this.articleMessage = [];
       this.isShow = false;
     },
     selectUser() {

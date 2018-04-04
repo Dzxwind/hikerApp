@@ -1,14 +1,14 @@
 <template>
   <div class="finddetail">
     <div class="finddetailWrapper col-xs-12">
-      <div class="userImg"><img :src="userMessage.user_img" alt=""></div>
+      <div class="userImg"><img :src="userIntro.user_img" alt=""></div>
       <div class="userDetail">
-        <p>昵称:{{userMessage.user_name}}</p>
-        <p>性别:{{userMessage.user_sex}}</p>
-        <p>年龄:{{userMessage.user_age}}</p>
-        <p>个性签名:{{userMessage.user_sign}}</p>
-        <p>曾经去过:<span v-for="item in wayMessage" :key="item.way_id" @click="linkWay()">{{item.way_name}},</span></p>
-        <p>游记:<span v-for="item in articleMessage" :key="item.article_id" @click="linkArticle()">《{{item.article_name}}》<br /></span></p>
+        <p>昵称:{{userIntro.user_name}}</p>
+        <p>性别:{{userIntro.user_sex}}</p>
+        <p>年龄:{{userIntro.user_age}}</p>
+        <p>个性签名:{{userIntro.user_sign}}</p>
+        <p>曾经去过:<span v-for="item in wayInfo" :key="item.way_id" @click="linkWay()">{{item.way_name}},</span></p>
+        <p>游记:<span v-for="item in articleInfo" :key="item.article_id" @click="linkArticle()">《{{item.article_name}}》<br /></span></p>
       </div>
       <div class="closeButton" @click="closeDetail()">×</div>
     </div>
@@ -20,23 +20,60 @@
 </style>
 <script>
 export default {
-  name:'finddetail',
-  props:{
-    userMessage:Object,
-    wayMessage:Array,
-    articleMessage:Array
+  name: "finddetail",
+  data() {
+    return {
+      // userIntro: {},
+      articleInfo: {}
+    };
   },
-  methods:{
-    closeDetail(){
-      this.$emit('closeDialog');
-      this.$router.push({path:'/find'});
+  computed: {
+    userData() {
+      return this.$store.state.userData;
     },
-    linkWay(){
-      this.$router.push({path:'/way/waydetail'});      
+    wayData() {
+      return this.$store.state.wayData;
     },
-    linkArticle(){
-      this.$router.push({path:'/article/articledetail'});      
+    articleData() {
+      return this.$store.state.articleData;
+    },
+    userIntro() {
+      for (let i = 0; i < this.userData.length; i++) {
+        if (this.$route.params.userIndex == this.userData[i].user_index) {
+          return this.userData[i];
+        }
+      }
+    },
+    wayInfo(){
+      for (let j = 0; j < this.wayData.length; j++) {
+        for (let i = 0; i < this.wayData[j].user_index.length; i++) {
+          if (this.$route.params.userIndex == this.wayData[j].user_index[i]) {
+            return this.wayData[j];
+          }
+        }        
+      }
     }
   },
-}
+  methods: {
+    closeDetail() {
+      this.$emit("closeDialog");
+      this.$router.push({ path: "/find" });
+    },
+    linkWay() {
+      this.wayMessage.push({path:`/way/waydetail/${this.wayData[i].way_index}`});
+    },
+    linkArticle() {
+      this.$router.push({ path: "/article/articledetail" });
+    },
+    // getWay(){
+    //   for (let i = 0; i < this.articleData.length; i++) {
+    //     for (let j = 0; j < item.article_index.length; j++) {
+    //       if (item.article_index[j] == this.articleData[i].article_index) {
+    //         this.articleMessage.push(this.articleData[i]);
+    //       }
+    //     }
+    //   }
+    // }
+  }
+};
 </script>

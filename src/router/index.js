@@ -25,7 +25,7 @@ export default new Router({
       component: find,
       children: [
         {
-          path: "finddetail",
+          path: "finddetail/:userIndex",
           component: finddetail
         }
       ]
@@ -35,7 +35,7 @@ export default new Router({
       name: "way",
       component: way,
       children: [{
-        path:"waydetail",
+        path:"waydetail/:wayIndex",
         component:waydetail
       }]
     },
@@ -44,7 +44,7 @@ export default new Router({
       name: "diary",
       component: diary,
       children: [{
-        path:"diarydetail",
+        path:"diarydetail/:diaryIndex",
         component:diarydetail
       }]
     },
