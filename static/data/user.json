@@ -19,7 +19,7 @@
     "user_img": "../../static/images/headImg/headImg1.jpg",
     "user_sex": "女",
     "user_sign": "很多事情毕竟大家都心知肚明",
-    "way_index": [2],
+    "way_index": [2,4],
     "article_index": [3]
   },
   {
@@ -96,7 +96,7 @@
     "user_img": "../../static/images/headImg/headImg8.jpg",
     "user_sex": "男",
     "user_sign":"云上阳光依旧，我们的爱永远。",
-    "way_index": [3],
+    "way_index": [3,4],
     "article_index": [6]
   },
   {
@@ -107,7 +107,7 @@
     "user_img": "../../static/images/headImg/headImg9.jpg",
     "user_sex": "女",
     "user_sign":"全世界崩塌的危险，也比不上我们永远的回忆。",
-    "way_index": [7],
+    "way_index": [7,4,9],
     "article_index": []
   },
   {

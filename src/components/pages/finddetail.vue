@@ -7,8 +7,12 @@
         <p>性别:{{userIntro.user_sex}}</p>
         <p>年龄:{{userIntro.user_age}}</p>
         <p>个性签名:{{userIntro.user_sign}}</p>
-        <p>曾经去过:<span v-for="item in wayInfo" :key="item.way_id" @click="linkWay()">{{item.way_name}},</span></p>
-        <p>游记:<span v-for="item in articleInfo" :key="item.article_id" @click="linkArticle()">《{{item.article_name}}》<br /></span></p>
+        <p>曾经去过:
+          <span v-for="item in wayInfo" :key="item.way_id" @click="linkWay(item)">{{item.way_name}},</span>
+        </p>
+        <p>游记:
+          <span v-for="item in articleInfo" :key="item.article_id" @click="linkArticle(item)">《{{item.article_name}}》<br /></span>
+          </p>
       </div>
       <div class="closeButton" @click="closeDetail()">×</div>
       <div class="backButton" @click="back()"><i class="el-icon-arrow-left"></i></div>
@@ -70,11 +74,11 @@ export default {
       this.$emit("closeDialog");
       this.$router.push({ path: "/find" });
     },
-    linkWay() {
-      this.wayMessage.push({path:`/way/waydetail/${this.wayData[i].way_index}`});
+    linkWay(item) {
+      this.$router.push({path:`/way/waydetail/${item.way_index}`});
     },
-    linkArticle() {
-      this.$router.push({ path: "/article/articledetail" });
+    linkArticle(item) {
+      this.$router.push({ path: `/article/articledetail//${item.article_index}` });
     },
     back(){
       this.$emit("closeDialog");
