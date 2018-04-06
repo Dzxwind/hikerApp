@@ -2,118 +2,112 @@
   {
     "user_id": "5ab4a36be9538cbd4af48adc",
     "user_index": 0,
-    "user_name": "Mayer",
+    "user_name": "说笑.",
     "user_age": 39,
     "user_img": "../../static/images/headImg/headImg0.jpg",
     "user_sex": "女",
     "user_sign":
-      "Irure amet esse adipisicing incididunt deserunt irure proident tempor est duis.",
-    "way_index": [11, 0, 15, 19],
-    "article_index": [7, 19]
+      "假如以后我们以后都各奔东西，要永远记住最初的梦。",
+    "way_index": [0,1,2,3],
+    "article_index": [7, 4]
   },
   {
     "user_id": "5ab4a36bb2aaa237b6052b25",
     "user_index": 1,
-    "user_name": "Caldwell",
+    "user_name": "各种懒",
     "user_age": 36,
     "user_img": "../../static/images/headImg/headImg1.jpg",
     "user_sex": "女",
-    "user_sign": "Est deserunt fugiat sint amet ullamco quis ex.",
+    "user_sign": "很多事情毕竟大家都心知肚明",
     "way_index": [2],
     "article_index": [3]
   },
   {
     "user_id": "5ab4a36ba4f721b2e1f2e424",
     "user_index": 2,
-    "user_name": "Weber",
+    "user_name": "温一蛊酒。",
     "user_age": 27,
     "user_img": "../../static/images/headImg/headImg2.jpg",
     "user_sex": "女",
-    "user_sign":
-      "Duis sunt commodo ipsum veniam aliquip exercitation deserunt mollit laboris incididunt sit non laborum.",
-    "way_index": [3, 11],
-    "article_index": [18]
+    "user_sign":"生活给你什么你就接受什么，怎么开心怎么活！",
+    "way_index": [3, 8],
+    "article_index": [9]
   },
   {
     "user_id": "5ab4a36b1bae918a1d22e5c5",
     "user_index": 3,
-    "user_name": "Bowen",
+    "user_name": "把酒迎风",
     "user_age": 39,
     "user_img": "../../static/images/headImg/headImg3.jpg",
     "user_sex": "女",
-    "user_sign":
-      "Exercitation consectetur incididunt pariatur tempor qui cupidatat sunt.",
+    "user_sign":"如若我离开了你，不是我不爱你了，而是我被你伤透了",
     "way_index": [3, 8, 1],
-    "article_index": [9, 4]
+    "article_index": [0,8]
   },
   {
     "user_id": "5ab4a36bd2c61735c384d441",
     "user_index": 4,
-    "user_name": "Robbins",
+    "user_name": "我是汤姆你是猫。",
     "user_age": 24,
     "user_img": "../../static/images/headImg/headImg4.jpg",
     "user_sex": "男",
-    "user_sign":
-      "Sint exercitation et do sunt quis irure laborum ex occaecat voluptate quis ullamco nostrud nisi.",
-    "way_index": [3, 17, 4, 10, 18, 9, 11, 12],
-    "article_index": [7]
+    "user_sign":"承诺只是谎言旳代名词而已。",
+    "way_index": [3, 0, 5, 8, 9],
+    "article_index": []
   },
   {
     "user_id": "5ab4a36b262f8a35d2fe20e5",
     "user_index": 5,
-    "user_name": "Dejesus",
+    "user_name": "王。",
     "user_age": 18,
     "user_img": "../../static/images/headImg/headImg5.jpg",
     "user_sex": "女",
-    "user_sign": "Quis anim eu velit cillum elit adipisicing magna nulla.",
-    "way_index": [18, 15, 17, 2, 17, 5, 6, 15],
+    "user_sign": "一般开学前几晚 几乎是万家灯火！",
+    "way_index": [8,7,1,0,6],
     "article_index": [5, 7]
   },
   {
     "user_id": "5ab4a36b054120f1217552ca",
     "user_index": 6,
-    "user_name": "Weeks",
+    "user_name": "拈歌画眸唱长卿",
     "user_age": 29,
     "user_img": "../../static/images/headImg/headImg6.jpg",
     "user_sex": "男",
-    "user_sign":
-      "Exercitation velit mollit excepteur et fugiat elit culpa aliqua deserunt irure ad aliquip aute.",
-    "way_index": [11, 7, 2, 8],
-    "article_index": []
+    "user_sign":"Waiting for your concern, until I shut the Heart",
+    "way_index": [7, 2, 8],
+    "article_index": [1]
   },
   {
     "user_id": "5ab4a36b488fc96a701e8b2d",
     "user_index": 7,
-    "user_name": "Jones",
+    "user_name": "安之若曦",
     "user_age": 24,
     "user_img": "../../static/images/headImg/headImg7.jpg",
     "user_sex": "女",
-    "user_sign": "Est cillum ullamco nulla eiusmod duis deserunt duis id duis.",
-    "way_index": [0, 2, 19, 1, 14, 7, 14],
-    "article_index": [11]
+    "user_sign": "懵懵懂懂的我们经历了世俗的沧桑，逐渐的成长！",
+    "way_index": [0, 2, 6, 8],
+    "article_index": [2]
   },
   {
     "user_id": "5ab4a36b288a3290be0a0620",
     "user_index": 8,
-    "user_name": "Sosa",
+    "user_name": "花雨黯",
     "user_age": 35,
     "user_img": "../../static/images/headImg/headImg8.jpg",
     "user_sex": "男",
-    "user_sign":
-      "Est laborum minim id laboris anim proident ex cupidatat pariatur aliqua.",
-    "way_index": [20],
-    "article_index": [14]
+    "user_sign":"云上阳光依旧，我们的爱永远。",
+    "way_index": [3],
+    "article_index": [6]
   },
   {
     "user_id": "5ab4a36bfbd345d50d1acf6a",
     "user_index": 9,
-    "user_name": "Freeman",
+    "user_name": "安人多梦",
     "user_age": 36,
     "user_img": "../../static/images/headImg/headImg9.jpg",
     "user_sex": "女",
-    "user_sign":
-      "Id tempor velit cupidatat qui voluptate non reprehenderit quis.",
-    "way_index": [20, 17],
+    "user_sign":"全世界崩塌的危险，也比不上我们永远的回忆。",
+    "way_index": [7],
     "article_index": []
   },
   {

@@ -47,8 +47,8 @@ export default {
     this.$http.all([this.getUserData(),this.getWayData(),this.getArticleData()])
     .then((that.$http.spread(function (user,way,article) {
       that.$store.state.userData = user.data;
-      that.$store.state.articleData = way.data;
-      that.$store.state.wayData = article.data;
+      that.$store.state.wayData = way.data;
+      that.$store.state.articleData = article.data;
       that.isDataGet = true;
     })))
   },

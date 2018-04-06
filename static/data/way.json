@@ -2,88 +2,88 @@
   {
     "way_id": "5ab46c9ca79214d5cac5c798",
     "way_index": 0,
-    "way_name": "laboris minim",
-    "way_subname": "Crumpler",
-    "way_img": "../images/wayImg0.jpg",
+    "way_name": "呼伦贝尔大草原",
+    "way_subname": "内蒙古",
+    "way_img": "../../static/images/wayImg/wayImg0.jpg",
     "way_intro":
-      "Voluptate in excepteur tempor elit esse. Do nisi eiusmod anim laborum aliqua eiusmod in in elit proident laboris magna. Labore ex aute pariatur dolore. Reprehenderit nisi duis reprehenderit ullamco ipsum fugiat. Exercitation cillum excepteur dolor veniam occaecat cupidatat ullamco dolore nostrud duis et nostrud aliqua.",
-    "user_index": [4, 28, 14, 9],
-    "article_index": [17]
+      "这里是我国目前保存最完好的草原，水草丰美，有“牧草王国”之称。 它是一代天骄成吉思汗的出生地，同时这里也是中外闻名的旅游胜地。 总面积一亿四千九百万亩。呼伦的蒙语大意为“水獭”，贝尔的蒙语大意为“雄水獭”，因为过去这两个湖里盛产水獭。 这样一片没有任何污染的绿色净土，出产肉、奶、皮、毛等畜产品备受国内外消费者青睐，连牧草也大量出口日本等国家。",
+    "user_index": [0,4,5,7],
+    "article_index": [8,6]
   },
   {
     "way_id": "5ab46c9ccf9caf5d68dadb92",
     "way_index": 1,
-    "way_name": "aute officia",
-    "way_subname": "Canterwood",
-    "way_img": "../images/wayImg1.jpg",
+    "way_name": "圣托里尼",
+    "way_subname": "希腊",
+    "way_img": "../../static/images/wayImg/wayImg1.jpg",
     "way_intro":
-      "Enim Lorem ea nulla reprehenderit qui duis elit officia est irure fugiat nostrud fugiat. Cillum irure consequat officia ea do est sint ullamco nulla consequat ullamco minim tempor. Do consectetur exercitation occaecat adipisicing eiusmod in pariatur aliqua qui pariatur fugiat voluptate. Esse elit ut amet consectetur aute sit eu magna.",
+      "圣托里尼岛（Santorini）是爱琴海最璀璨的一颗明珠，柏拉图笔下的自由之地，这里有世界上最美的日落，最壮阔的海景，这里蓝白相知的色彩天地是艺术家的聚集地，是摄影家的天堂，在这里，你可以作诗人，也可以作画家，彩绘出你心目中圣托里尼最蓝的天空。在圣托里尼，感受到的，就是每个人印象中的爱琴海了：阳光、蓝天、碧海、还有这里特有的白房子。在岛上的几天，是最近最悠闲的几天:骑着驴在港口和村落间游荡、坐船去火山岛闲转、在爱琴海边吃烤肉、在伊亚看号称世界上最美丽的落日。岛上较佳的海滩集中在岛的东南岸,其中以柏丽沙沙滩尤为宜人.海滩上的沙粒是黑色的火山石。北面有一个小镇伊亚，是欣赏日落的好地方。",
     "user_index": [8, 9, 16, 5, 14],
     "article_index": [13, 14, 19]
   },
   {
     "way_id": "5ab46c9c42c6c75dbed2cf46",
     "way_index": 2,
-    "way_name": "tempor excepteur",
-    "way_subname": "Blanford",
-    "way_img": "../images/wayImg2.jpg",
+    "way_name": "马尔代夫",
+    "way_subname": "马尔代夫",
+    "way_img": "../../static/images/wayImg/wayImg2.jpg",
     "way_intro":
-      "Ut dolor exercitation id adipisicing veniam occaecat elit. Nisi deserunt enim sunt nulla. Mollit dolore anim dolor est occaecat adipisicing officia ad fugiat quis minim laboris duis. Qui incididunt nulla irure eu. Est adipisicing id sit consequat dolore quis sint consectetur ipsum do amet id.",
+      "看过《麦兜故事》的人很难不和麦兜一起爱上这个岛国：“椰林树影，水清沙幼。”马尔代夫的国家旅游局如此评价自己的祖国：“如果你一生中有很多次出国旅游的机会，那你一定要来马尔代夫；如果你一生中只有一次出国旅游的机会，那你更要来马尔代夫。” 马尔代夫位于南亚，是印度洋上的一个岛国，由1200余个小珊瑚岛屿组成，其中202个岛屿有人居住，是亚洲最小的国家。事实上，随着全球的气候变暖， 海平面正以每年两厘米上升。这对于平均海拔只有1.2米的马尔代夫来说是致命的。换言之，以当前海平面的上涨速度，马尔代夫将在50年后完全消失。那么，在这座伊甸园涅槃之前，你是否也要安排一次美丽的邂逅，在马代，和恋人，把浪漫与快乐永远铭刻在内心深处的某个角落？",
     "user_index": [16, 11, 25, 21, 21],
     "article_index": [12, 2]
   },
   {
     "way_id": "5ab46c9c9ba8f3208ed4c3e2",
     "way_index": 3,
-    "way_name": "ea ipsum",
-    "way_subname": "Statenville",
-    "way_img": "../images/wayImg3.jpg",
+    "way_name": "西双版纳",
+    "way_subname": "云南",
+    "way_img": "../../static/images/wayImg/wayImg3.jpg",
     "way_intro":
-      "Tempor exercitation sint nostrud eiusmod. Adipisicing exercitation velit consequat dolor anim ullamco irure in nulla sit nisi. Labore sunt magna nisi id sunt occaecat culpa ut in adipisicing esse ut. Proident consectetur proident qui ex eu ut incididunt aliquip consectetur.",
+      "西双版纳傣族自治州，位于中华人民共和国云南省西南端，是云南省下辖的一个自治州。西双版纳，古代傣语为“勐巴拉那西”，意思是“理想而神奇的乐土”，这里以神奇的热带雨林自然景观和少数民族风情而闻名于世，是中国的热点旅游城市之一。每年的泼水节于4月中旬举行，吸引了众多国内外的游客参与。 景区包括景洪市风景片区、勐海县风景片区、勐腊县风景片区三大块。每一块内又有若干景区，共有19个风景区，800多个景点，总面积1202.53平方公里。该区有著种类繁多的动植物资源，被称之为“热带动物”王国。其中许多珍稀、古老、奇特、濒危的动、植物又是西双版纳独有的，引起了国内外游客和科研工作者的极大兴趣。景观以丰富迷人的热带、亚热带雨林、季雨林、沟谷雨林风光、珍稀动物和绚丽多彩的民族文化，民族风情为主体。该区景观独特，知名度高。",
     "user_index": [22, 21, 20],
     "article_index": [11, 10]
   },
   {
     "way_id": "5ab46c9cf4d8230b2a9a55ff",
     "way_index": 4,
-    "way_name": "cillum elit",
-    "way_subname": "Jugtown",
-    "way_img": "../images/wayImg4.jpg",
+    "way_name": "普罗旺斯",
+    "way_subname": "法国",
+    "way_img": "../../static/images/wayImg/wayImg4.jpg",
     "way_intro":
-      "Velit ullamco voluptate pariatur dolor incididunt eu est officia. Et eiusmod amet qui velit cillum nisi dolore nostrud id magna occaecat do deserunt officia. Do exercitation nisi ipsum ut non laboris. Esse eiusmod eiusmod labore incididunt fugiat aliqua esse consectetur do consectetur culpa. Id ex in amet est.",
+      "普罗旺斯（Provence）位于法国东南部，毗邻地中海和意大利，从地中海沿岸延伸到内陆的丘陵地区，中间有大河“Rhone”流过。自古就以靓丽的阳光和蔚蓝的天空，迷人的地中海和心醉的薰衣草，令世人惊艳。 普罗旺斯境内有艾克斯（Aix-en-Provence）、马赛等名城，还有阿尔（Arles)市、葛德市、阿维尼翁（Avignon)、尼姆(Nimes)市等组成，并出产优质葡萄酒。此地区物产丰饶、阳光明媚、风景优美，从古希腊、古罗马时代起就吸引着无数游人，至今依然是旅游胜地。 普罗旺斯从诞生之日起，就谨慎地保守着她的秘密，直到英国人彼得·梅尔的到来，普罗旺斯许久以来独特生活风格的面纱才渐渐揭开。 在梅尔的笔下“普罗旺斯”已不再是一个单纯的地域名称，更代表了一种简单无忧、轻松慵懒的生活方式，一种宠辱不惊，看庭前花开花落；去留无意，望天上云卷云舒的闲适意境。如果旅行是为了摆脱生活的桎梏，普罗旺斯会让你忘掉一切。",
     "user_index": [0, 1, 13, 29, 2],
     "article_index": [1, 19]
   },
   {
     "way_id": "5ab46c9c409ac28c7caf5139",
     "way_index": 5,
-    "way_name": "labore reprehenderit",
-    "way_subname": "Richford",
-    "way_img": "../images/wayImg5.jpg",
+    "way_name": "布拉格",
+    "way_subname": "捷克",
+    "way_img": "../../static/images/wayImg/wayImg5.jpg",
     "way_intro":
-      "Anim nulla dolore magna commodo nostrud non nulla mollit nulla. Tempor nulla veniam officia reprehenderit nisi sit id quis consequat exercitation. Tempor aute nulla reprehenderit ad non ea fugiat amet ex Lorem minim consectetur sint. Sit consectetur duis commodo do dolore adipisicing excepteur qui exercitation ut. Cillum ex do anim velit dolore ad pariatur proident quis eu eu do. Aliquip eiusmod reprehenderit reprehenderit aliqua nostrud aliquip esse commodo id officia enim.",
+      "来到布拉格，绝对不能错过这个生气蓬勃又饶富古意的旧城广场(Staromestske Namesti)。这个被称为布拉格心脏的旧城广场上，有15世纪以生命捍卫真理的捷克宗教改革先驱：J.胡斯的塑像；80多米高的蒂恩双塔教堂；有 500多年历史的古钟等著名建筑。广场周围还有卖拉线木偶、捷克小吃的小商亭。",
     "user_index": [9, 0, 20, 5],
     "article_index": [15]
   },
   {
     "way_id": "5ab46c9c9cf60523ceb9cb99",
     "way_index": 6,
-    "way_name": "aute dolor",
-    "way_subname": "Bellfountain",
-    "way_img": "../images/wayImg6.jpg",
+    "way_name": "张家界",
+    "way_subname": "湖南",
+    "way_img": "../../static/images/wayImg/wayImg6.jpg",
     "way_intro":
-      "Amet sint reprehenderit culpa est. Fugiat sit deserunt nulla voluptate esse eiusmod ipsum duis id fugiat elit proident. Nisi exercitation cupidatat cillum minim sit elit ad minim voluptate veniam fugiat id aliqua exercitation. Ullamco laboris esse irure sint occaecat in. Duis Lorem in consequat voluptate veniam. Qui proident adipisicing eu reprehenderit mollit. Et laborum nulla excepteur amet est.",
+      "张家界是湖南一个地级市，位于湖南西北部，属武陵山脉腹地，为中国最重要的旅游城市之一。 张家界景区共分为四大块：张家界国家森林公园，杨家界自然保护区，天子山自然保护区，索溪峪自然保护区四大景区，统称为武陵源风景名胜区。张家界国家森林公园是中国第一个国家森林公园，景区集神奇、钟秀、雄浑、原始、清新于一体，以岩称奇。园内连绵重叠着数以千计的石峰，奇峰陡峭嵯峨，千姿百态，或孤峰独秀，或群峰相依，造型完美，形神兼备。 除武陵源核心景区外，武陵源区有“中华最佳洞府”“地下龙宫”黄龙洞、“人间瑶池”宝峰湖、“江南名刹”普光禅寺、土家人的“圣地”土家风情园等等旅游景点。",
     "user_index": [18, 18],
     "article_index": []
   },
   {
     "way_id": "5ab46c9c90f5541fd38d4dac",
     "way_index": 7,
-    "way_name": "aute enim",
-    "way_subname": "Turah",
-    "way_img": "../images/wayImg7.jpg",
+    "way_name": "承德避暑山庄",
+    "way_subname": "河北",
+    "way_img": "../../static/images/wayImg/wayImg7.jpg",
     "way_intro":
-      "Aliquip adipisicing minim veniam eiusmod id ea dolor incididunt elit irure do. Ut excepteur voluptate culpa aute esse ut tempor excepteur incididunt ullamco consectetur et elit. Commodo cupidatat tempor sit fugiat exercitation quis aliquip. Proident ipsum dolor incididunt commodo adipisicing cupidatat pariatur cillum consectetur ut est.",
+      "承德避暑山庄，中国古代帝王宫苑，清代皇帝避暑和处理政务的场所。位于河北省承德市市区北部。中国三大古建筑群之一，入“世界文化遗产”名录。 避暑山庄始建于康熙四十二年(1703年)，建成于乾隆五十五年，历时87年。这座规模宏大的园林拥有殿、堂、楼、馆、亭、榭、阁、轩、斋、寺等建筑100余处。 它的最大特色是山中有园，园中有山，山区占了整个园林面积的4/5。从西北部高峰到东南部湖沼、平原地带，相对等差180米，形成了群峰环绕、色壑纵横的景，山谷中清泉涌流，密林幽深。 避暑山庄占地564万平方米，是中国现存占地最大的古代帝王宫苑。",
     "user_index": [19, 0, 12, 0],
     "article_index": []
   },
@@ -92,7 +92,7 @@
     "way_index": 8,
     "way_name": "eu aliquip",
     "way_subname": "Thornport",
-    "way_img": "../images/wayImg8.jpg",
+    "way_img": "../../static/images/wayImg/wayImg8.jpg",
     "way_intro":
       "Labore excepteur laboris officia laboris exercitation id consequat nisi. Pariatur laborum non Lorem est culpa fugiat minim ea velit. Nisi sit veniam commodo nisi laborum minim ipsum officia reprehenderit incididunt. Ea excepteur duis excepteur enim.",
     "user_index": [23, 8, 10, 6],
@@ -103,7 +103,7 @@
     "way_index": 9,
     "way_name": "incididunt sunt",
     "way_subname": "Hachita",
-    "way_img": "../images/wayImg9.jpg",
+    "way_img": "../../static/images/wayImg/wayImg9.jpg",
     "way_intro":
       "Laboris excepteur elit dolor culpa est dolore nulla magna ut laboris officia nisi. Irure aliqua elit exercitation deserunt ex enim do proident sunt sunt duis. Id excepteur cupidatat pariatur reprehenderit eu dolor ex sint incididunt aute dolore mollit.",
     "user_index": [2, 3, 26, 10, 25],
@@ -114,7 +114,7 @@
     "way_index": 10,
     "way_name": "eu anim",
     "way_subname": "Wilsonia",
-    "way_img": "../images/wayImg10.jpg",
+    "way_img": "../../static/images/wayImg/wayImg10.jpg",
     "way_intro":
       "Quis velit duis do culpa minim reprehenderit. Irure laboris eu esse non elit ea nisi ut dolore culpa laborum quis. Adipisicing aliqua duis culpa nulla.",
     "user_index": [],
@@ -125,7 +125,7 @@
     "way_index": 11,
     "way_name": "ea veniam",
     "way_subname": "Fresno",
-    "way_img": "../images/wayImg11.jpg",
+    "way_img": "../../static/images/wayImg/wayImg11.jpg",
     "way_intro":
       "Eu duis exercitation aute commodo aliquip consequat commodo pariatur ad eu quis nulla mollit dolor. Cillum enim incididunt veniam eu nostrud. Incididunt deserunt culpa veniam nisi velit. Eiusmod id cupidatat non minim.",
     "user_index": [17, 15, 29, 16],
@@ -136,7 +136,7 @@
     "way_index": 12,
     "way_name": "deserunt proident",
     "way_subname": "Selma",
-    "way_img": "../images/wayImg12.jpg",
+    "way_img": "../../static/images/wayImg/wayImg12.jpg",
     "way_intro":
       "Duis commodo labore fugiat consequat proident non ea Lorem nostrud pariatur ut incididunt quis magna. Ut qui officia sunt cillum voluptate. Officia tempor amet dolore dolor cillum non quis proident. Consectetur laborum exercitation cillum nostrud eiusmod laboris sunt ea reprehenderit excepteur veniam aliqua ex reprehenderit.",
     "user_index": [3, 18, 20, 7, 18],
@@ -147,7 +147,7 @@
     "way_index": 13,
     "way_name": "elit exercitation",
     "way_subname": "Ventress",
-    "way_img": "../images/wayImg13.jpg",
+    "way_img": "../../static/images/wayImg/wayImg13.jpg",
     "way_intro":
       "Ullamco irure voluptate sunt quis laborum. Dolor consectetur nisi occaecat et adipisicing magna pariatur magna adipisicing magna do enim laborum ea. Lorem nisi nulla tempor nisi do. Velit commodo laborum excepteur do. Quis nisi adipisicing dolor labore excepteur nisi enim laboris enim eiusmod aute commodo. Laborum cupidatat quis commodo nulla dolore culpa culpa amet do qui. Velit sint reprehenderit dolore labore Lorem.",
     "user_index": [25, 13, 25, 2, 19],
@@ -158,7 +158,7 @@
     "way_index": 14,
     "way_name": "aute et",
     "way_subname": "Lloyd",
-    "way_img": "../images/wayImg14.jpg",
+    "way_img": "../../static/images/wayImg/wayImg14.jpg",
     "way_intro":
       "Cupidatat laboris ipsum mollit aliquip ipsum sint pariatur consequat fugiat. Minim cillum ea aute aliqua laborum officia aliqua Lorem nulla ullamco. Enim tempor sunt veniam deserunt. Mollit id occaecat Lorem dolore amet.",
     "user_index": [17, 23, 13, 12, 20],
@@ -169,7 +169,7 @@
     "way_index": 15,
     "way_name": "est aute",
     "way_subname": "Hardyville",
-    "way_img": "../images/wayImg15.jpg",
+    "way_img": "../../static/images/wayImg/wayImg15.jpg",
     "way_intro":
       "Nostrud mollit laboris ut proident sit nisi sunt nulla dolor adipisicing aliqua dolore. Fugiat tempor id eu dolor Lorem. Aute tempor esse ullamco ut minim nisi ullamco qui non minim voluptate. Ad cupidatat est tempor consectetur cupidatat cillum irure ad.",
     "user_index": [25, 9, 21, 2, 20],
@@ -180,7 +180,7 @@
     "way_index": 16,
     "way_name": "enim et",
     "way_subname": "Murillo",
-    "way_img": "../images/wayImg16.jpg",
+    "way_img": "../../static/images/wayImg/wayImg16.jpg",
     "way_intro":
       "Amet id pariatur aliquip fugiat qui elit laboris nostrud proident dolor ullamco proident magna laboris. Eu nulla reprehenderit ea consequat. Velit pariatur consequat ut ut non. Lorem Lorem in sunt deserunt laborum duis est consectetur aliquip aliqua aute nisi qui. Laboris officia tempor non reprehenderit id esse pariatur. Irure ipsum minim et et labore ut enim esse duis pariatur id ullamco anim voluptate.",
     "user_index": [8],
@@ -191,7 +191,7 @@
     "way_index": 17,
     "way_name": "ullamco magna",
     "way_subname": "Homestead",
-    "way_img": "../images/wayImg17.jpg",
+    "way_img": "../../static/images/wayImg/wayImg17.jpg",
     "way_intro":
       "Pariatur qui consectetur laborum fugiat dolor irure et magna ea dolor reprehenderit eu tempor. Nisi velit et do occaecat consequat ex enim deserunt aliquip aute consequat. Ex qui ad elit et ullamco. Cillum ut mollit nulla commodo. Consectetur pariatur consequat deserunt dolor esse. Mollit adipisicing tempor sit aliquip elit nisi excepteur ad duis. Consectetur ea sint esse anim.",
     "user_index": [23, 22, 14, 8, 7],
@@ -202,7 +202,7 @@
     "way_index": 18,
     "way_name": "in aliqua",
     "way_subname": "Whitewater",
-    "way_img": "../images/wayImg18.jpg",
+    "way_img": "../../static/images/wayImg/wayImg18.jpg",
     "way_intro":
       "Ad velit proident commodo ipsum. Commodo eu anim occaecat ullamco elit velit minim culpa ut cupidatat mollit. Dolor aute ullamco in in sunt non commodo ut. Sit proident Lorem occaecat id tempor ullamco in mollit fugiat ea magna exercitation. Consectetur minim labore consequat veniam labore. Dolor occaecat nostrud officia velit. Aliquip anim sit in magna fugiat duis excepteur eiusmod deserunt.",
     "user_index": [],
@@ -213,7 +213,7 @@
     "way_index": 19,
     "way_name": "fugiat sunt",
     "way_subname": "Cassel",
-    "way_img": "../images/wayImg19.jpg",
+    "way_img": "../../static/images/wayImg/wayImg19.jpg",
     "way_intro":
       "Quis consectetur veniam amet ad amet excepteur labore. Do id culpa sint laborum velit ad. Minim aliqua ex in dolore est aliquip ipsum minim nostrud. In commodo laborum eiusmod fugiat aute dolor nostrud sit nulla mollit excepteur incididunt adipisicing ipsum. Enim et id quis fugiat aliquip labore enim.",
     "user_index": [27, 30, 28, 17],

@@ -11,6 +11,7 @@
         <p>游记:<span v-for="item in articleInfo" :key="item.article_id" @click="linkArticle()">《{{item.article_name}}》<br /></span></p>
       </div>
       <div class="closeButton" @click="closeDetail()">×</div>
+      <div class="backButton" @click="back()"><i class="el-icon-arrow-left"></i></div>
     </div>
   </div>
 </template>
@@ -24,7 +25,6 @@ export default {
   data() {
     return {
       // userIntro: {},
-      articleInfo: {}
     };
   },
   computed: {
@@ -45,13 +45,24 @@ export default {
       }
     },
     wayInfo(){
+      let tmpDatas = [];
       for (let j = 0; j < this.wayData.length; j++) {
         for (let i = 0; i < this.wayData[j].user_index.length; i++) {
           if (this.$route.params.userIndex == this.wayData[j].user_index[i]) {
-            return this.wayData[j];
+            tmpDatas.push(this.wayData[j]);
           }
         }        
       }
+      return tmpDatas;
+    },
+    articleInfo(){
+      let tmpDatas2 = [];
+      for (let j = 0; j < this.articleData.length; j++) {
+          if (this.$route.params.userIndex == this.articleData[j].user_index) {
+            tmpDatas.push(this.articleData[j]);
+        }        
+      }
+      return tmpDatas2;
     }
   },
   methods: {
@@ -65,6 +76,10 @@ export default {
     linkArticle() {
       this.$router.push({ path: "/article/articledetail" });
     },
+    back(){
+      this.$emit("closeDialog");
+      this.$router.go(-1);
+    }
     // getWay(){
     //   for (let i = 0; i < this.articleData.length; i++) {
     //     for (let j = 0; j < item.article_index.length; j++) {
