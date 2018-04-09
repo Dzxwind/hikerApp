@@ -145,32 +145,26 @@ export default {
       this.filterData =[];
       this.userData.forEach(item => {
       this.filterData.push(item);
+    });
       this.sexValue = "";
       this.ageValue = "";
       this.wayValue = "";
-    });
       
     },
     sexSelect(){
-      this.filterData = [];
-      for (let i = 0; i < this.userData.length; i++) {
-        if(this.sexValue == ""){
-          return;
-        }else if (this.sexValue == this.userData[i].user_sex) {
-          this.filterData.push(this.userData[i])
-        }
-      }
-      this.filterData.filter(item => {
-        if(this.sexValue) {
-
-        }
+      this.filterData = this.filterData.filter(item => {
+          return item.user_sex == this.sexValue
       })
     },
     ageSelect(){
-      
+      this.filterData = this.filterData.filter(item => {
+          return parseInt(item.user_age) <= parseInt(this.ageValue) 
+      })
     },
     waySelect(){
-
+      this.filterData = this.filterData.filter(item => {
+          return item.way_index.length <= parseInt(this.wayValue)
+      })
     },
   },
   computed:{
@@ -182,26 +176,12 @@ export default {
     },
     articleData(){
       return this.$store.state.articleData;
-    }
+    },
   },
   created(){
     this.userData.forEach(item => {
       this.filterData.push(item);
     })
-  }
-  // computed: {
-  //   filterList() {
-  //     var sexSelect = this.sexSelect;
-  //     var ageSelect = this.ageSelect;
-  //     var goneSelect = this.goneSelect;
-  //     return this.userData.filter(filterItem => {
-  //       return (
-  //         filterItem.sex == sexSelect &&
-  //         filterItem.ageSelector == ageSelect &&
-  //         filterItem.gone.length == goneSelect
-  //       );
-  //     });
-  //   }
-  // },
+  },
 };
 </script>
