@@ -63,7 +63,7 @@ export default {
       let tmpDatas2 = [];
       for (let j = 0; j < this.articleData.length; j++) {
           if (this.$route.params.userIndex == this.articleData[j].user_index) {
-            tmpDatas.push(this.articleData[j]);
+            tmpDatas2.push(this.articleData[j]);
         }        
       }
       return tmpDatas2;
@@ -84,15 +84,6 @@ export default {
       this.$emit("closeDialog");
       this.$router.go(-1);
     }
-    // getWay(){
-    //   for (let i = 0; i < this.articleData.length; i++) {
-    //     for (let j = 0; j < item.article_index.length; j++) {
-    //       if (item.article_index[j] == this.articleData[i].article_index) {
-    //         this.articleMessage.push(this.articleData[i]);
-    //       }
-    //     }
-    //   }
-    // }
   }
 };
 </script>

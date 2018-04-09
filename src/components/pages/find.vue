@@ -19,31 +19,31 @@
         <div class="selectList">
           <div class="selectGroup">
             <label for="sexSelect">性别：</label>
-            <el-select v-model="sexValue" placeholder="请选择" size="small">
+            <el-select v-model="sexValue" placeholder="请选择" size="small" @change="sexSelect">
               <el-option v-for="item in sex" :key="item.value" :label="item.label" :value="item.value">
               </el-option>
             </el-select>
           </div>
           <div class="selectGroup">
             <label for="ageSelect">年龄：</label>
-            <el-select v-model="ageValue" placeholder="请选择" size="small">
+            <el-select v-model="ageValue" placeholder="请选择" size="small" @change="ageSelect">
               <el-option v-for="item in age" :key="item.value" :label="item.label" :value="item.value">
               </el-option>
             </el-select>
           </div>
           <div class="selectGroup">
             <label for="goneSelect">去过：</label>
-            <el-select v-model="wayValue" placeholder="请选择" size="small">
+            <el-select v-model="wayValue" placeholder="请选择" size="small" @change="waySelect">
               <el-option v-for="item in way" :key="item.value" :label="item.label" :value="item.value">
               </el-option>
             </el-select>
           </div>
         </div>
-        <!-- <el-button type="primary" round  @click="selectUser()" class="selectSubmit" icon="el-icon-search">搜索</el-button> -->
+        <el-button type="primary" round  @click="resetUser()" icon="el-icon-refresh">重置</el-button>
       </div>
       <transition name="el-zoom-in-top">
         <div class="selectListin">
-          <div class="selectList_i" v-for="(item) in userData" :key="item.user_id" @click="showDetail(item)">
+          <div class="selectList_i" v-for="item in filterData" :key="item.user_index" @click="showDetail(item)">
               <div class="selectListImg">
                 <img :src="item.user_img" alt="">
                 <span class="selectListName" v-text="item.user_name"></span>
@@ -72,30 +72,20 @@ export default {
   data() {
     return {
       isShow: false,
-      sexSelect: "",
-      ageSelect: "",
       goneSelect: "",
       showFilter: false,
       whichBanner:"findBanner",
       sex:[
         {
-          value:'',
-          label:'不限'
-        },
-        {
-          value:'male',
+          value:'男',
           label:'男'
         },
         {
-          value:'female',
+          value:'女',
           label:'女'
         },
       ],
       age:[
-        {
-          value:'',
-          label:'不限'
-        },
         {
           value:'20',
           label:'20岁以下'
@@ -114,10 +104,6 @@ export default {
         },
       ],
       way:[
-        {
-          value:'',
-          label:'不限'
-        },
         {
           value:'1',
           label:'0处'
@@ -138,7 +124,9 @@ export default {
       sexValue:'',
       ageValue:'',
       wayValue:'',
-      userIndex:''
+      userIndex:'',
+      filterData:[],
+      tmpData:[]
     };
   },
   components: {
@@ -149,13 +137,37 @@ export default {
     showDetail(item) {
       this.isShow = true;
       this.$router.push({path:`/find/finddetail/${item.user_index}`});
-      // this.userIndex = item.user_index;
     },
     hideDetail() {
       this.isShow = false;
     },
-    selectUser() {
-      this.showFilter = true;
+    resetUser(){
+      this.filterData =[];
+      this.userData.forEach(item => {
+      this.filterData.push(item);
+    });
+      
+    },
+    sexSelect(){
+          this.filterData = [];
+      for (let i = 0; i < this.userData.length; i++) {
+        if(this.sexValue == ""){
+          return;
+        }else if (this.sexValue == this.userData[i].user_sex) {
+          this.filterData.push(this.userData[i])
+        }
+      }
+      this.filterData.filter(item => {
+        if(this.sexValue) {
+
+        }
+      })
+    },
+    ageSelect(){
+      
+    },
+    waySelect(){
+
     },
   },
   computed:{
@@ -168,6 +180,11 @@ export default {
     articleData(){
       return this.$store.state.articleData;
     }
+  },
+  created(){
+    this.userData.forEach(item => {
+      this.filterData.push(item);
+    })
   }
   // computed: {
   //   filterList() {
