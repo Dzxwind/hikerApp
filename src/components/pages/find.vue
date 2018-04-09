@@ -39,7 +39,7 @@
             </el-select>
           </div>
         </div>
-        <el-button type="primary" round  @click="resetUser()" icon="el-icon-refresh">重置</el-button>
+        <el-button type="primary" round  @click="resetUser()" icon="el-icon-refresh" class="selectSubmit">重置</el-button>
       </div>
       <transition name="el-zoom-in-top">
         <div class="selectListin">
@@ -145,11 +145,14 @@ export default {
       this.filterData =[];
       this.userData.forEach(item => {
       this.filterData.push(item);
+      this.sexValue = "";
+      this.ageValue = "";
+      this.wayValue = "";
     });
       
     },
     sexSelect(){
-          this.filterData = [];
+      this.filterData = [];
       for (let i = 0; i < this.userData.length; i++) {
         if(this.sexValue == ""){
           return;

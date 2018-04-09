@@ -21,13 +21,13 @@
           margin: 10px 33px;
         }
         @media screen and(max-width:1440px) {
-          margin: 10px 12px;
+          margin: 10px 23px;
         }
         @media screen and(max-width:1366px) {
-          margin: 10px 7px;
+          margin: 10px 17px;
         }
         @media screen and(max-width:1024px) {
-          margin: 10px 18px;
+          margin: 10px 30px;
         }
         @media screen and(max-width: 500px) {
           float: none;
@@ -68,17 +68,6 @@
         font-size: 18px;
         color: $fontBlack;
       }
-      select {
-        border-radius: 999px;
-        font-size: 14px;
-        padding: 2px 10px;
-        margin-right: 10px;
-        outline: none;
-        cursor: pointer;
-        &:focus {
-          border: 1px solid $greenBlue;
-        }
-      }
       .selectGroup{
         display: inline-block;
         @media screen and(max-width:450px){
@@ -87,23 +76,10 @@
       }
     }
     .selectSubmit {
-      background-color: $greenBlue;
       float: left;
       margin: 27px 0;
-      padding: 2px 30px;
-      border-radius: 999px;
-      color: #fff;
-      font-size: 18px;
-      line-height: 30px;
       margin-left: 20px;
       cursor: pointer;
-      img {
-        width: 20px;
-        margin-right: 10px;
-      }
-      &:hover {
-        background-color: $lightGreen;
-      }
     }
   }
   .selectListin {
@@ -118,13 +94,13 @@
         margin: 10px 60px;
       }
       @media screen and(max-width:1440px) {
-        margin: 10px 12px;
+        margin: 10px 24px;
       }
       @media screen and(max-width:1366px) {
-        margin: 10px 7px;
+        margin: 10px 18px;
       }
       @media screen and(max-width:1024px) {
-        margin: 10px 18px;
+        margin: 10px 30px;
       }
       @media screen and(max-width: 400px) {
         float: none;
