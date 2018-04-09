@@ -1,12 +1,8 @@
 .find {
-  .findTitle {
-    @include heavyTitle();
-  }
   .recommend {
     margin-top: 10px;
     .recommendTitle {
-      color: $darkGreen;
-      font-size: 20px;
+      @include heavyTitle();
     }
     .recommendList {
       margin-top: 10px;
@@ -68,9 +64,9 @@
         font-size: 18px;
         color: $fontBlack;
       }
-      .selectGroup{
+      .selectGroup {
         display: inline-block;
-        @media screen and(max-width:450px){
+        @media screen and(max-width: 450px) {
           margin-top: 10px;
         }
       }

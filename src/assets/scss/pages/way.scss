@@ -1,63 +1,36 @@
 .way {
-  padding-bottom: 60px; // height: 600px;
-  width: 100%; // background: url('#{$images}/screen2.png') no-repeat center center;
-  color: $darkGreen;
+  padding-bottom: 60px;
+  width: 100%;
   @include clearfix;
-  .way__title {
-    font-size: 36px;
-    opacity: 1;
-  }
-  .way__nav {
-    margin-bottom: 10px;
-    ul {
-      list-style: none;
-      margin-top: 20px;
-      @include clearfix;
-      li {
-        float: left;
-        padding: 10px 10px 5px 10px;
-        cursor: pointer;
-        border-bottom: 2px solid transparent;
-        &:hover {
-          color: $greenBlue;
-        }
-        &.active {
-          color: #fff;
-          background-color: $greenBlue;
-        }
+  .wayWrapper {
+    .hotRoad {
+      .hotTitle {
+        @include heavyTitle;
       }
-      .more {
-        float: right;
-      }
-    }
-  }
-  .way__hr {
-    height: 2px;
-    width: 100%;
-    background-color: $greenBlue;
-    margin-bottom: 10px;
-  }
-  .way__list {
-    // margin: 0 auto;
-    @include clearfix;
-    display: flex;
-    flex-flow: row wrap;
-    &::after {
-      content: '';
-      display: block;
-      clear: both;
-    }
-    .way__list_i {
-      flex: 1 0 22%;
-      margin: 10px; // min-height: 190px;
-      border: 1px solid #fff;
-      overflow: hidden;
-      @media screen and(max-width: 500px) {
-        min-height: 100px;
-        flex: 1 0 40%;
-      }
-      img {
+      .hotContent {
         width: 100%;
+        @include clearfix;
+        margin-top: 10px;
+        .hotContent_i {
+          width: 45%;
+          border-radius: 7px;
+          min-height: 130px;
+          background-size: 100%;
+          background-position: center center;
+          background-repeat: no-repeat;
+          transition: all 3s;
+          &:hover{
+            background-size: 120%;
+          }
+          &:nth-child(1) {
+            float: left;
+            background-image: url('#{$images}/hotImg1.png');
+          }
+          &:nth-child(2) {
+            float: right;
+            background-image: url('#{$images}/hotImg2.png');
+          }
+        }
       }
     }
   }
