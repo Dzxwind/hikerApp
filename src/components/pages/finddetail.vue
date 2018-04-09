@@ -17,6 +17,9 @@
       <div class="closeButton" @click="closeDetail()">×</div>
       <div class="backButton" @click="back()"><i class="el-icon-arrow-left"></i></div>
     </div>
+    <transition name="el-fade-in">
+      <myMask v-if="isShow"></myMask>    
+    </transition>
   </div>
 </template>
 <style lang="scss">
@@ -24,12 +27,17 @@
 @import "../../assets/scss/pages/finddetail.scss";
 </style>
 <script>
+import myMask from "./../mask";
 export default {
   name: "finddetail",
   data() {
     return {
       // userIntro: {},
+      isShow:true
     };
+  },
+  components:{
+    myMask
   },
   computed: {
     userData() {
@@ -84,6 +92,6 @@ export default {
       this.$emit("closeDialog");
       this.$router.go(-1);
     }
-  }
+  },
 };
 </script>

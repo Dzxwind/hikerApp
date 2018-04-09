@@ -52,9 +52,6 @@
         </div>
       </transition>
     </div>
-    <transition name="el-fade-in">
-      <myMask v-if="isShow"></myMask>    
-    </transition>
     <transition name="el-fade-in">    
       <router-view :userMessage="userIndex" @closeDialog="hideDetail()"></router-view>
     </transition>
@@ -65,7 +62,6 @@
 @import "../../assets/scss/pages/find.scss";
 </style>
 <script>
-import myMask from "./../mask";
 import subBanner from "./../subBanner";
 export default {
   name: "find",
@@ -130,7 +126,6 @@ export default {
     };
   },
   components: {
-    myMask,
     subBanner
   },
   methods: {
