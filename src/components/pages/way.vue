@@ -32,9 +32,6 @@ export default {
           name: "放松休闲"
         },
         {
-          name: "红色旅行"
-        },
-        {
           name: "徒步健身"
         },
         {
