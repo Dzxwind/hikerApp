@@ -7,6 +7,7 @@
         <div class="hotContent">
           <div class="hotContent_i" v-for="(item,index) in topShow" :key="item.name" v-if="index < 2">
             <div class="hotContentName">{{item.name}}<br>{{item.enName}}</div>
+            <div class="hotNumber">{{item.people}}人去过</div>
             <div class="hotImg">
               <img :src="item.topImage" alt="">
             </div>
@@ -18,7 +19,9 @@
         <div class="roadListTitle">推荐路线</div>
         <el-tabs v-model="activeName" @tab-click="handleClick">
           <el-tab-pane v-for="item in tabs" :key="item.id" :label="item.name" :name="item.id">
-            {{item.name}}
+            <div class="wayList" v-for="subItem in wayData" :key="subItem.way_index" v-if="item.id === subItem.way_section">
+              {{subItem.way_index}}
+            </div>
           </el-tab-pane>
         </el-tabs>
       </div>
@@ -37,23 +40,23 @@ export default {
     return {
       tabs: [
         {
-          id:0,
+          id:'0',
           name: "接近自然"
         },
         {
-          id:1,
+          id:'1',
           name: "人文之行"
         },
         {
-          id:2,
+          id:'2',
           name: "放松休闲"
         },
         {
-          id:3,
+          id:'3',
           name: "徒步健身"
         },
         {
-          id:4,
+          id:'4',
           name: "梦幻之旅"
         }
       ],
@@ -71,7 +74,8 @@ export default {
           people: "617",
           topImage: require("./../../assets/hotImg2.png")
         }
-      ]
+      ],
+      activeName: '0'
     };
   },
   methods: {
