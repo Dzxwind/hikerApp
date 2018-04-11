@@ -5,7 +5,12 @@
       <div class="hotRoad">
         <div class="hotTitle">热门路线</div>
         <div class="hotContent">
-          <div class="hotContent_i" v-for="(item,index) in wayData" :key="item.way_index" v-if="index < 2"></div>
+          <div class="hotContent_i" v-for="(item,index) in topShow" :key="item.name" v-if="index < 2">
+            <div class="hotContentName">{{item.name}}<br>{{item.enName}}</div>
+            <div class="hotImg">
+              <img :src="item.topImage" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -39,6 +44,20 @@ export default {
         }
       ],
       whichBanner:"wayBanner",
+      topShow:[
+        {
+          name:"香港",
+          enName:"HongKong",
+          people:"584",
+          topImage:require("./../../assets/hotImg1.png")
+        },
+        {
+          name:"普罗旺斯",
+          enName:"Provence",
+          people:"617",
+          topImage:require("./../../assets/hotImg2.png")
+        }
+      ]
     };
   },
   methods:{
