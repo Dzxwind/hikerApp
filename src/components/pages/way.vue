@@ -13,6 +13,15 @@
           </div>
         </div>
       </div>
+      <div class="hr"></div>
+      <div class="roadList">
+        <div class="roadListTitle">推荐路线</div>
+        <el-tabs v-model="activeName" @tab-click="handleClick">
+          <el-tab-pane v-for="item in tabs" :key="item.id" :label="item.name" :name="item.id">
+            {{item.name}}
+          </el-tab-pane>
+        </el-tabs>
+      </div>
     </div>
   </div>
 </template>
@@ -28,54 +37,61 @@ export default {
     return {
       tabs: [
         {
+          id:0,
           name: "接近自然"
         },
         {
+          id:1,
           name: "人文之行"
         },
         {
+          id:2,
           name: "放松休闲"
         },
         {
+          id:3,
           name: "徒步健身"
         },
         {
+          id:4,
           name: "梦幻之旅"
         }
       ],
-      whichBanner:"wayBanner",
-      topShow:[
+      whichBanner: "wayBanner",
+      topShow: [
         {
-          name:"香港",
-          enName:"HongKong",
-          people:"584",
-          topImage:require("./../../assets/hotImg1.png")
+          name: "香港",
+          enName: "HongKong",
+          people: "584",
+          topImage: require("./../../assets/hotImg1.png")
         },
         {
-          name:"普罗旺斯",
-          enName:"Provence",
-          people:"617",
-          topImage:require("./../../assets/hotImg2.png")
+          name: "普罗旺斯",
+          enName: "Provence",
+          people: "617",
+          topImage: require("./../../assets/hotImg2.png")
         }
       ]
     };
   },
-  methods:{
-
+  methods: {
+    handleClick(tab, event) {
+      console.log(tab, event);
+    }
   },
-  components:{
-    subBanner,
+  components: {
+    subBanner
   },
-  computed:{
-    userData(){
+  computed: {
+    userData() {
       return this.$store.state.userData;
     },
-    wayData(){
+    wayData() {
       return this.$store.state.wayData;
     },
-    articleData(){
+    articleData() {
       return this.$store.state.articleData;
-    },
-  },
+    }
+  }
 };
 </script>

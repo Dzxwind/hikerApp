@@ -4,6 +4,7 @@
   @include clearfix;
   .wayWrapper {
     .hotRoad {
+      margin-top: 20px;
       .hotTitle {
         @include heavyTitle;
       }
@@ -56,6 +57,20 @@
             }
           }
         }
+      }
+    }
+    .hr{
+      height: 1px;
+      width: 80%;
+      margin: 50px auto;
+      background-color: #eee;
+      @media screen and(max-width:800px){
+        margin: 30px auto;
+      }
+    }
+    .roadList{
+      .roadListTitle{
+        @include heavyTitle;
       }
     }
   }
