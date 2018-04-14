@@ -17,10 +17,13 @@
       <div class="hr"></div>
       <div class="roadList">
         <div class="roadListTitle">推荐路线</div>
-        <el-tabs v-model="activeName" @tab-click="handleClick">
+        <el-tabs v-model="activeName">
           <el-tab-pane v-for="item in tabs" :key="item.id" :label="item.name" :name="item.id">
-            <div class="wayList" v-for="subItem in wayData" :key="subItem.way_index" v-if="item.id === subItem.way_section">
-              {{subItem.way_index}}
+            <div class="wayList" v-for="subItem in wayData" :key="subItem.way_index" v-if="item.id === subItem.way_section" :style="{backgroundImage:'url(' + subItem.way_img + ')'}">
+              <div class="wayText">
+                <div class="wayName">{{subItem.way_name}}</div>
+                <div class="waySubName">{{subItem.way_subname}}</div>
+              </div>
             </div>
           </el-tab-pane>
         </el-tabs>
@@ -79,12 +82,10 @@ export default {
     };
   },
   methods: {
-    handleClick(tab, event) {
-      console.log(tab, event);
-    }
+
   },
   components: {
-    subBanner
+    subBanner,
   },
   computed: {
     userData() {
@@ -96,6 +97,6 @@ export default {
     articleData() {
       return this.$store.state.articleData;
     }
-  }
+  },
 };
 </script>

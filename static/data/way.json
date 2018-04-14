@@ -122,12 +122,12 @@
   {
     "way_id": "5ab46c9c6c19546949038b9f",
     "way_index": 10,
-    "way_name": "eu anim",
-    "way_subname": "Wilsonia",
+    "way_name": "香港",
+    "way_subname": "中国",
     "way_section":"4",
-    "way_img": "../../static/images/wayImg/wayImgeg.jpg",
+    "way_img": "../../static/images/wayImg/wayImg10.jpg",
     "way_intro":
-      "Quis velit duis do culpa minim reprehenderit. Irure laboris eu esse non elit ea nisi ut dolore culpa laborum quis. Adipisicing aliqua duis culpa nulla.",
+      "香港是一座高度繁荣的国际大都市，全境由香港岛、九龙半岛、新界等3大区域组成，管辖陆地总面积1106.34平方公里，截至2017年末，总人口约740.98万人，人口密度居全世界第三。",
     "user_index": [],
     "article_index": [15, 18, 19]
   },

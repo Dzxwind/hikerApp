@@ -11,6 +11,7 @@ import "./assets/bootstrap/js/bootstrap.min"
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import "./assets/theme/index.css";
+import "vue2-animate/dist/vue2-animate.min.css";
 
 Vue.use(ElementUI);
 Vue.config.productionTip = false
