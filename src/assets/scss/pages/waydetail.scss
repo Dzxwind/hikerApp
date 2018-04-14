@@ -1,0 +1,64 @@
+.waydetail {
+  .waydetailWrapper {
+    .titleBox {
+      .title {
+        color: $darkGreen;
+        font-size: 36px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .subTitle {
+        text-align: center;
+        color: #999;
+        font-size: 16px;
+        vertical-align: middle;
+        margin-top: 10px;
+        .locate {
+          margin-right: 10px;
+          img {
+            display: inline-block;
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+    .hr {
+      height: 1px;
+      width: 80%;
+      background-color: #eee;
+      margin: 20px auto;
+    }
+    .imageBox {
+      margin: 10px 0;
+      img {
+        margin: 0 auto;
+        width: 400px;
+        display: block;
+      }
+    }
+    .contentBox{
+      margin: 40px auto 10px auto;
+      width: 80%;
+      text-indent: 2em;
+      line-height: 24px;
+      color: $fontBlack;
+    }
+    .userBox{
+      margin-top: 30px;
+      float: right;
+      .user_i{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-size: 100% 100%;
+        background-position: center center;
+        margin: 0 5px;
+        float: left;
+        cursor: pointer;
+      }
+      span{
+        color: #999;
+      }
+    }
+  }
+}

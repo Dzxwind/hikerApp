@@ -127,8 +127,8 @@
     "way_section":"4",
     "way_img": "../../static/images/wayImg/wayImg10.jpg",
     "way_intro":
-      "香港是一座高度繁荣的国际大都市，全境由香港岛、九龙半岛、新界等3大区域组成，管辖陆地总面积1106.34平方公里，截至2017年末，总人口约740.98万人，人口密度居全世界第三。",
-    "user_index": [],
+      "香港（粤拼：hoeng1 gong2；英文：Hong Kong；普通话拼音：xiāng gǎng；缩写：HK），简称“港”，全称为中华人民共和国香港特别行政区（HKSAR）。地处中国华南地区，珠江口以东，南海沿岸，北接广东省深圳市，西接珠江，与澳门特别行政区、珠海市以及中山市隔着珠江口相望。香港是一座高度繁荣的国际大都市，全境由香港岛、九龙半岛、新界等3大区域组成，管辖陆地总面积1106.34平方公里，截至2017年末，总人口约740.98万人，人口密度居全世界第三。",
+    "user_index": [11],
     "article_index": [15, 18, 19]
   },
   {
@@ -224,7 +224,7 @@
     "way_img": "../../static/images/wayImg/wayImgeg.jpg",
     "way_intro":
       "Ad velit proident commodo ipsum. Commodo eu anim occaecat ullamco elit velit minim culpa ut cupidatat mollit. Dolor aute ullamco in in sunt non commodo ut. Sit proident Lorem occaecat id tempor ullamco in mollit fugiat ea magna exercitation. Consectetur minim labore consequat veniam labore. Dolor occaecat nostrud officia velit. Aliquip anim sit in magna fugiat duis excepteur eiusmod deserunt.",
-    "user_index": [],
+    "user_index": [16],
     "article_index": []
   },
   {
