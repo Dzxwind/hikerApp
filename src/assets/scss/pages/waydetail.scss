@@ -36,17 +36,18 @@
         display: block;
       }
     }
-    .contentBox{
+    .contentBox {
       margin: 40px auto 10px auto;
       width: 80%;
       text-indent: 2em;
       line-height: 24px;
       color: $fontBlack;
+      @include clearfix;
     }
-    .userBox{
+    .userBox {
       margin-top: 30px;
       float: right;
-      .user_i{
+      .user_i {
         border-radius: 50%;
         width: 30px;
         height: 30px;
@@ -56,8 +57,37 @@
         float: left;
         cursor: pointer;
       }
-      span{
+      span {
         color: #999;
+      }
+    }
+    .articleBox {
+      margin-top: 20px;
+      .articleTitle {
+        @include heavyTitle;
+        margin-bottom: 20px;
+      }
+      .articleBoxWrapper{
+        @include clearfix;
+        padding: 40px 20px;
+        background-color: #fbfbfb;
+        .articleBox_i {
+          float: left;
+          width: 40%;
+          margin: 0 5%;
+          overflow: hidden;
+          cursor: pointer;
+          img {
+            width: 100%;
+            border-radius: 7px;
+          }
+          .articleName {
+            text-align: center;
+            font-size: 16px;
+            color: $darkGreen;
+            margin-top: 10px;
+          }
+        }
       }
     }
   }

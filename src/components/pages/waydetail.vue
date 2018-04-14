@@ -23,12 +23,15 @@
           <span>等{{userInfo.length}}人去过</span>
         </div>
       </div>
-      <!-- 文章联动功能待添加 -->
-      <!-- <div class="articleBox">
-        <div class="articleBox_i" v-for="item in articleInfo" :key="item.article_index">
-          <img :src="item.article_img" alt="">
+      <div class="articleBox" v-if="articleInfo">
+        <div class="articleTitle">相关游记</div>
+        <div class="articleBoxWrapper">
+          <div class="articleBox_i" v-for="(item,index) in articleInfo" v-if="index < 2" :key="item.article_index" @click="linkarticle(item)">
+            <img :src="item.article_img" alt="">
+            <div class="articleName">{{item.article_name}}</div>
+          </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -77,9 +80,7 @@ export default {
       if (tmpDatas2.length != 0) {
         return tmpDatas2;
       }else if (tmpDatas2.length == 0){
-        tmpDatas2 = {
-          article_name:"暂无数据"
-        }
+        tmpDatas2 = false;
         return tmpDatas2;
       }
     }
