@@ -6,6 +6,6 @@
 </style>
 <script>
 export default {
-  name:'diarydetail',
+  name:'articledetail',
 }
 </script>

@@ -6,7 +6,7 @@
       <router-link to="/">首&nbsp;&nbsp;页</router-link>
       <router-link to="/find">发&nbsp;&nbsp;现</router-link>
       <router-link to="/way">路&nbsp;&nbsp;线</router-link>
-      <router-link to="/diary">游&nbsp;&nbsp;记</router-link>
+      <router-link to="/article">游&nbsp;&nbsp;记</router-link>
       <router-link to="/contact">联&nbsp;&nbsp;系</router-link>
     </div>
     <div class="mobileLink">
@@ -15,7 +15,7 @@
         <router-link to="/">首页</router-link>
         <router-link to="find">发现</router-link>
         <router-link to="way">路线</router-link>
-        <router-link to="diary">游记</router-link>
+        <router-link to="article">游记</router-link>
         <router-link to="contact">联系</router-link>
       </div>
     </div>

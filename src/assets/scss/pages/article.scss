@@ -1,0 +1,47 @@
+.article{
+  .articleWrapper{
+    .articleTitle{
+      @include heavyTitle;
+    }
+    .articleList{
+      @include clearfix;
+      .articleList_i{
+        float: left;
+        width: 31%;
+        margin: 50px 1%;
+        height: 200px;
+        cursor: pointer;
+        @media screen and(max-width:800px){
+          width: 48%;
+        }
+        .articleImg{
+          width: 100%;
+          height: 100%;
+          background-size: auto 100%;
+          background-position: center center;
+          background-repeat: no-repeat;
+          // overflow: hidden;
+          // img{
+          //   display: block;
+          //   height: 100%;
+          // }
+        }
+        .userInfo{
+          .userImg{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            img{
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+          }
+          .userName{
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}

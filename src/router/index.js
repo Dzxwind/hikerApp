@@ -3,11 +3,11 @@ import Router from "vue-router";
 import index from "@/components/pages/index";
 import find from "@/components/pages/find";
 import way from "@/components/pages/way";
-import diary from "@/components/pages/diary";
+import article from "@/components/pages/article";
 import contact from "@/components/pages/contact";
 import finddetail from "@/components/pages/finddetail";
 import waydetail from "@/components/pages/waydetail";
-import diarydetail from "@/components/pages/diarydetail";
+import articledetail from "@/components/pages/articledetail";
 
 Vue.use(Router);
 
@@ -40,12 +40,12 @@ export default new Router({
       }]
     },
     {
-      path: "/diary",
-      name: "diary",
-      component: diary,
+      path: "/article",
+      name: "article",
+      component: article,
       children: [{
-        path:"diarydetail/:diaryIndex",
-        component:diarydetail
+        path:"articledetail/:articleIndex",
+        component:articledetail
       }]
     },
     {
