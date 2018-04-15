@@ -10,11 +10,6 @@
           </ul>
         </div>
       </div>
-      <!-- <div class="road__list">
-        <div class="road__list_i" v-for="roadItem in roadList" v-bind:key="roadItem.name">
-          <img :src="roadItem.src">
-          </div>
-      </div> -->
       <div class="road__newlist">
         <div v-for="(item,index) in wayData" :key="item.way_name" class="col-lg-3 col-xs-6 road__newlist_i" v-if="index<8">
           <el-card :body-style="{ padding: '0px' }">

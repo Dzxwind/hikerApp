@@ -18,10 +18,10 @@
     }
     .logo {
       float: left;
-      font-size: 32px;
-      font-weight: bold;
-      color: $darkGreen;
       margin-right: 20px;
+      img{
+        width: 50px;
+      }
     }
     .pcLink {
       @media screen and(max-width: 1920px) {

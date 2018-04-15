@@ -1,7 +1,7 @@
 <template>
 <div class="col-lg-12">
   <div class="navList" :class="{navList_fixed : isfixed,navList_animate : isslide}">
-    <div class="logo">LOGO</div>
+    <div class="logo"><img src="./../assets/logo.png" alt=""></div>
     <div class="pcLink">
       <router-link to="/">首&nbsp;&nbsp;页</router-link>
       <router-link to="/find">发&nbsp;&nbsp;现</router-link>
