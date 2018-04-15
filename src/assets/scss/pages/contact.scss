@@ -1,0 +1,60 @@
+.contact{
+  .contactWrapper{
+    margin-bottom: 60px;
+    .contactUs{
+      .contactTitle{
+        @include heavyTitle;
+        margin-bottom: 20px;
+      }
+      @include clearfix;
+      .contactWords{
+        float: left;
+        width: 55%;
+        @media screen and(max-width:800px){
+          float: none;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .contactSubTitle{
+          @include heavyTitle;
+          font-weight: normal;
+          font-size: 18px;
+        }
+        .contactText{
+          margin-top: 20px;
+          p{
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: $fontBlack;
+            font-weight: 200;
+          }
+        }
+      }
+      .contactLogo{
+        width: 30%;
+        float: right;
+        margin-bottom: 30px;
+        @media screen and(max-width:800px){
+          float: none;
+          text-align: center;
+          margin: 50px auto;
+          width: 60%;
+        }
+        img{
+          width: 100%;
+        }
+      }
+      .contactMap{
+        clear: both;
+        margin: 0 auto;
+        width: 80%;
+        height: 300px;
+        #mymap{
+          width: 100%;
+          height: 100%;
+         
+        }
+      }
+    }
+  }
+}

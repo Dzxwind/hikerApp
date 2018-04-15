@@ -63,7 +63,7 @@ export default {
         for (let j = 0; j < this.wayData[i].article_index.length; j++) {
           if (this.$route.params.articleIndex == this.wayData[i].article_index[j]) {
             return this.wayData[i]
-          }        
+          }
         }
       }
     },
