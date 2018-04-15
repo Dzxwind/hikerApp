@@ -72,9 +72,13 @@
       border-color: $lightGreen;
     }
   }
-  .image {
-    width: 100%;
-    display: block;
+  .roadImg{
+    height: 110px;
+    overflow: hidden;
+    .image {
+      width: 100%;
+      display: block;
+    }
   }
   .clearfix:before,
   .clearfix:after {

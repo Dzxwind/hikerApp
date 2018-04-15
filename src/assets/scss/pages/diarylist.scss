@@ -33,6 +33,10 @@
         line-height: 28px;
         margin-bottom: 30px;
         // width: 80%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
       }
       .diary_iImg {
         // width: 18%;

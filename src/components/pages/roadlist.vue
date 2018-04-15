@@ -16,11 +16,13 @@
           </div>
       </div> -->
       <div class="road__newlist">
-        <div v-for="item in roadList" :key="item.name" class="col-lg-3 col-xs-6 road__newlist_i">
+        <div v-for="(item,index) in wayData" :key="item.way_name" class="col-lg-3 col-xs-6 road__newlist_i" v-if="index<8">
           <el-card :body-style="{ padding: '0px' }">
-            <img :src="item.src" class="image">
+            <div class="roadImg">
+              <img :src="item.way_img" class="image">
+            </div>
             <div style="padding: 14px;">
-              <span>{{item.name}}</span>
+              <span>{{item.way_name}}</span>
               <div class="bottom clearfix">
                 <el-button type="success" round class="button" @click="goDetail(item)">详情</el-button>
               </div>
@@ -41,48 +43,6 @@ export default {
   data() {
     return{
       isActive:false,
-      roadList:[
-        {
-          name:"五龙潭",
-          src:require("../../assets/roadItem1.jpeg"),
-          liked:false,
-        },
-        {
-          name:"五龙潭1",
-          src:require("../../assets/roadItem1.jpeg"),
-          liked:false
-        },
-        {
-          name:"五龙潭2",
-          src:require("../../assets/roadItem1.jpeg"),
-          liked:false
-        },
-        {
-          name:"五龙潭3",
-          src:require("../../assets/roadItem1.jpeg"),
-          liked:false
-        },
-        {
-          name:"五龙潭4",
-          src:require("../../assets/roadItem1.jpeg"),
-          liked:false
-        },
-        {
-          name:"五龙潭5",
-          src:require("../../assets/roadItem1.jpeg"),
-          liked:false
-        },
-        {
-          name:"五龙潭6",
-          src:require("../../assets/roadItem1.jpeg"),
-          liked:false
-        },
-        {
-          name:"五龙潭7",
-          src:require("../../assets/roadItem1.jpeg"),
-          liked:false
-        },
-      ]
     }
   },
   methods:{
@@ -90,8 +50,13 @@ export default {
       this.$router.push({path:'/way'});
     },
     goDetail(item){
-      this.$router.push({path:'/way/waydetail'});
+      this.$router.push({path:`/way/waydetail/${item.way_index}`})
     }    
+  },
+  computed:{
+    wayData() {
+      return this.$store.state.wayData;
+    },
   }
 }
 </script>

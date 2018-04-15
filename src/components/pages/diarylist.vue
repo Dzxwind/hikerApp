@@ -5,10 +5,10 @@
         <a @click="moreClick()">更多>>></a>
       </div>
       <div class="diarylist">
-        <div class="diarylist_i" v-for="(diary,index) in diarys"  v-bind:key="diary.diaryId" v-if="index < 3">
-          <div class="diary_iTitle" v-text="diary.title"></div>
-          <div class="diary_iContent col-xs-12 col-lg-9" v-text="diary.content"></div>
-          <div class="diary_iImg col-xs-12 col-lg-3"><img :src="diary.imgSrc"></div>
+        <div class="diarylist_i" v-for="(item,index) in articleData"  v-bind:key="item.diaryId" v-if="index < 3">
+          <div class="diary_iTitle" v-text="item.article_name"></div>
+          <div class="diary_iContent col-xs-12 col-lg-9" v-text="item.article_content"></div>
+          <div class="diary_iImg col-xs-12 col-lg-3"><img :src="item.article_img"></div>
           <div class="diary_iHr"></div>
         </div>
       </div>
@@ -53,6 +53,11 @@ export default {
           content:"下午17点30左右去南京火车站→在火车站吃晚饭→坐火车去上海（G7025，19:00―20:39）→在上海火车站南广场坐五号线去浦东机场T2（约40分钟-1小时到达，上海火车站发车时间：5:30-21:30，间隔：15-25分，票价：16-22元，电话：68346830）→晚上21:30到俄航柜台办理值机（俄航check in的人非常多，建议提前4个小时到机场）→逛日上免税店（上海浦东机场T1和T2的入境免税店是24小时开放的，是为了方便那些出境时购买存放了免税品的旅客"
         }
       ]
+    }
+  },
+  computed:{
+    articleData() {
+      return this.$store.state.articleData;
     }
   },
   methods:{
