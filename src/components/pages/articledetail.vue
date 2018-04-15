@@ -1,5 +1,7 @@
 <template>
-  
+  <div class="articledetial">
+    
+  </div>
 </template>
 <style lang="scss">
 

@@ -5,7 +5,7 @@
       <div class="hotRoad">
         <div class="hotTitle">热门路线</div>
         <div class="hotContent">
-          <div class="hotContent_i" v-for="(item,index) in topShow" :key="item.name" v-if="index < 2" @click="linkDetail(item)">
+          <div class="hotContent_i" v-for="(item,index) in topShow" :key="item.name" v-if="index < 2" @click="linkHotDetail(item)">
             <div class="hotContentName">{{item.name}}<br>{{item.enName}}</div>
             <div class="hotNumber">{{item.people}}人去过</div>
             <div class="hotImg">
@@ -19,7 +19,7 @@
         <div class="roadListTitle">推荐路线</div>
         <el-tabs v-model="activeName">
           <el-tab-pane v-for="item in tabs" :key="item.id" :label="item.name" :name="item.id">
-            <div class="wayList" v-for="subItem in wayData" :key="subItem.way_index" v-if="item.id === subItem.way_section" :style="{backgroundImage:'url(' + subItem.way_img + ')'}">
+            <div class="wayList" v-for="subItem in wayData" :key="subItem.way_index" v-if="item.id === subItem.way_section" :style="{backgroundImage:'url(' + subItem.way_img + ')'}" @click="linkDetail(subItem)">
               <div class="wayText">
                 <div class="wayName">{{subItem.way_name}}</div>
                 <div class="waySubName">{{subItem.way_subname}}</div>
@@ -86,9 +86,13 @@ export default {
     };
   },
   methods: {
-    linkDetail(item){
-      this.isShow = true
+    linkHotDetail(item){
+      this.isShow = true;
       this.$router.push({path:`/way/waydetail/${item.link}`});
+    },
+    linkDetail(subItem){
+      this.isShow = true;
+      this.$router.push({path:`/way/waydetail/${subItem.way_index}`});
     }
   },
   components: {

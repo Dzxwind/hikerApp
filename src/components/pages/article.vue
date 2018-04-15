@@ -5,10 +5,10 @@
       <div class="articleTitle">精选游记</div>
       <div class="articleList">
         <div class="articleList_i" v-for="item in articleData" :key="item.article_index">
-          <div class="articleImg" :style="{backgroundImage:'url(' + item.article_img + ')'}">
+          <div class="articleImg" :style="{backgroundImage:'url(' + item.article_img + ')'}" @click="linkDetail(item)">
             <!-- <img :src="item.article_img" alt=""> -->
           </div>
-          <div class="articleInfo">
+          <div class="articleInfo" @click="linkDetail(item)">
             {{item.article_name}}
           </div>
           <div class="userInfo">
@@ -52,5 +52,11 @@ export default {
       return this.$store.state.articleData;
     }
   },
+  methods:{
+    linkDetail(item){
+      this.isShow = true;
+      this.$router.push({path:`/article/articledetail/${item.article_index}`});
+    }
+  }
 }
 </script>
