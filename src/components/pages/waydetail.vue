@@ -7,7 +7,7 @@
         </div>
         <div class="subTitle">          
           <span class="locate">
-            <img src="./../../assets/locate.png" alt="">雅典
+            <img src="./../../assets/locate.png" alt="">{{wayIntro.way_subname}}
           </span>
           <span class="read">浏览：117</span>
         </div>

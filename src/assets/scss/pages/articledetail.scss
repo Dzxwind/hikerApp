@@ -1,0 +1,70 @@
+.articledetial {
+  .articledetailWrapper {
+    margin-bottom: 60px;
+    .titleBox {
+      .title {
+        color: $darkGreen;
+        font-size: 36px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .subTitle {
+        text-align: center;
+        color: #999;
+        font-size: 16px;
+        vertical-align: middle;
+        margin-top: 10px;
+        .user{
+          margin-right: 10px;
+          cursor: pointer;
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+          }
+          &:hover{
+            color: $greenBlue;
+          }
+        }
+        .locate {
+          margin-right: 10px;
+          cursor: pointer;
+          img {
+            display: inline-block;
+            margin-right: 6px;
+          }
+          &:hover{
+            color: $greenBlue;
+          }
+        }
+      }
+    }
+    .hr {
+      height: 1px;
+      width: 80%;
+      background-color: #eee;
+      margin: 20px auto;
+    }
+    .imageBox {
+      margin: 10px 0;
+      img {
+        margin: 0 auto;
+        width: 40%;
+        display: block;
+        @media screen and(max-width:800px){
+          width: 90%;
+        }
+      }
+    }
+    .contentBox {
+      margin: 40px auto 10px auto;
+      width: 80%;
+      text-indent: 2em;
+      line-height: 24px;
+      color: $fontBlack;
+      @include clearfix;
+    }
+  }
+}
