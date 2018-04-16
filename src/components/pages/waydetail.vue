@@ -97,7 +97,7 @@ export default {
       this.$router.push({path:`/find/finddetail/${item.user_index}`})
     },
     linkarticle(item){
-      this.$router.push({path:`/article/articledetail/${item.user_index}`})
+      this.$router.push({path:`/article/articledetail/${item.article_index}`})
     }
   },
   components:{
