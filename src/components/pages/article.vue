@@ -1,7 +1,7 @@
 <template>
   <div class="article">
     <subBanner :useWhichBanner="whichBanner"></subBanner>
-    <div class="col-lg-8 col-lg-offset-2 col-xs-12 articleWrapper" v-if="!isShow">
+    <div class="col-lg-8 col-lg-offset-2 col-xs-12 articleWrapper">
       <div class="articleTitle">精选游记</div>
       <div class="articleList">
         <div class="articleList_i" v-for="item in articleData" :key="item.article_index">

@@ -1,7 +1,7 @@
 <template>
   <div class="way">
     <subBanner :useWhichBanner="whichBanner"></subBanner>
-    <div class="wayWrapper col-lg-8 col-lg-offset-2 col-xs-12" v-if="!isShow">
+    <div class="wayWrapper col-lg-8 col-lg-offset-2 col-xs-12">
       <div class="hotRoad">
         <div class="hotTitle">热门路线</div>
         <div class="hotContent">

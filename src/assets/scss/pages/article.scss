@@ -1,5 +1,6 @@
 .article{
   .articleWrapper{
+    margin-bottom: 60px;
     .articleTitle{
       @include heavyTitle;
     }
@@ -11,13 +12,15 @@
         margin: 50px 1%;
         height: 200px;
         cursor: pointer;
+        color: $darkGreen;
+        font-size: 14px;
         @media screen and(max-width:800px){
           width: 48%;
         }
         .articleImg{
           width: 100%;
           height: 100%;
-          background-size: auto 100%;
+          background-size: 100%;
           background-position: center center;
           background-repeat: no-repeat;
           // overflow: hidden;
@@ -25,6 +28,9 @@
           //   display: block;
           //   height: 100%;
           // }
+        }
+        .articleInfo{
+          margin: 5px 0; 
         }
         .userInfo{
           .userImg{
@@ -38,6 +44,7 @@
             }
           }
           .userName{
+            color: #999;
             display: inline-block;
           }
         }
