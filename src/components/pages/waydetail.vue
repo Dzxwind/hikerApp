@@ -1,5 +1,6 @@
 <template>
   <div class="waydetail">
+    <subBanner :useWhichBanner="whichBanner"></subBanner>
     <div class="waydetailWrapper col-xs-12 col-lg-8 col-lg-offset-2">
       <div class="titleBox">
         <div class="title">
@@ -40,8 +41,14 @@
 @import "../../assets/scss/pages/waydetail.scss";
 </style>
 <script>
+import subBanner from "./../subBanner";
 export default {
   name: "waydetail",
+  data(){
+    return{
+      whichBanner: "wayBanner",
+    }
+  },
   computed: {
     userData() {
       return this.$store.state.userData;
@@ -92,6 +99,9 @@ export default {
     linkarticle(item){
       this.$router.push({path:`/article/articledetail/${item.user_index}`})
     }
+  },
+  components:{
+    subBanner
   }
 };
 </script>

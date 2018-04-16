@@ -1,5 +1,6 @@
 <template>
   <div class="articledetial">
+    <subBanner :useWhichBanner="whichBanner"></subBanner>
     <div class="articledetailWrapper col-xs-12 col-lg-8 col-lg-offset-2">
       <div class="titleBox">
         <div class="title">
@@ -30,8 +31,17 @@
 @import "../../assets/scss/pages/articledetail.scss";
 </style>
 <script>
+import subBanner from "./../subBanner";
 export default {
   name:'articledetail',
+  data(){
+    return {
+      whichBanner: "articleBanner",
+    }
+  },
+  components:{
+    subBanner
+  },
   computed:{
     userData() {
       return this.$store.state.userData;

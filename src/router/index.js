@@ -33,25 +33,29 @@ export default new Router({
     {
       path: "/way",
       name: "way",
-      component: way,
-      children: [{
-        path:"waydetail/:wayIndex",
-        component:waydetail
-      }]
+      component: way
+    },
+    {
+      path: "/waydetail/:wayIndex",
+      name: "waydetaiil",
+      component: waydetail,
+      alias: "/way/waydetail/:wayIndex"
+    },
+    {
+      path: "/articledetail/:articleIndex",
+      name: "articledetaiil",
+      component: articledetail,
+      alias: "/article/articledetail/:articleIndex"
     },
     {
       path: "/article",
       name: "article",
       component: article,
-      children: [{
-        path:"articledetail/:articleIndex",
-        component:articledetail
-      }]
     },
     {
       path: "/contact",
       name: "contact",
-      component: contact,
+      component: contact
     }
   ]
 });

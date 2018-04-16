@@ -86,7 +86,7 @@ export default {
       this.$router.push({path:`/way/waydetail/${item.way_index}`});
     },
     linkArticle(item) {
-      this.$router.push({ path: `/article/articledetail//${item.article_index}` });
+      this.$router.push({ path: `/article/articledetail/${item.article_index}` });
     },
     back(){
       this.$emit("closeDialog");
