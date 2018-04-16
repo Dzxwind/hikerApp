@@ -22,7 +22,6 @@
         </div>
       </div>
     </div>
-    <router-view v-if="isShow"></router-view>
   </div>
 </template>
 <style scoped lang="scss">
@@ -35,7 +34,6 @@ export default {
   data(){
     return{
       whichBanner:"articleBanner",
-      isShow:false
     }
   },
   components:{

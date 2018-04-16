@@ -29,7 +29,6 @@
         </el-tabs>
       </div>
     </div>
-    <router-view v-if="isShow"></router-view>
   </div>
 </template>
 <style lang="scss">
@@ -82,7 +81,6 @@ export default {
         }
       ],
       activeName: '0',
-      isShow:false
     };
   },
   methods: {
