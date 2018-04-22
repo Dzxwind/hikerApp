@@ -3,7 +3,7 @@
     <subBanner :useWhichBanner="whichBanner"></subBanner>
     <div class="col-lg-8 col-lg-offset-2 col-xs-12" style="padding-bottom:60px;">
       <div class="recommend">
-        <div class="recommendTitle">发现</div>
+        <div class="recommendTitle">推荐驴友</div>
         <div class="recommendList">
           <div class="recommendList_i" v-for="(item,index) in userData" v-if="index < 5" :key="item.user_id" @click="showDetail(item)" >
             <div class="recommendListImg">
